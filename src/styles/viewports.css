@@ -1,0 +1,13 @@
+:root,
+:host {
+  /*
+  * These variables can NOT be used in custom-media definitions
+  * https://github.com/MoOx/postcss-cssnext/issues/253
+  * They are here to use the widths in component styles
+  * that need them.
+  */
+  --viewport-lg-min-width: 1240px;
+  --viewport-md-min-width: 1024px;
+  --viewport-sm-min-width: 744px;
+  --viewport-xs-min-width: 0px;
+}

@@ -1,0 +1,18 @@
+/**
+* Below breakpoints also are manually set on these files:
+* - styles/breakpoint-sizes.js
+* - styles/viewports.css
+* - styles/grid.mixins.css
+*/
+
+@custom-media --viewport-xl (min-width: 1800px);
+@custom-media --viewport-l (min-width: 1240px) and (max-width: 1799.98px);
+@custom-media --viewport-m (min-width: 1024px) and (max-width: 1239.98px);
+@custom-media --viewport-s (min-width: 744px) and (max-width: 1023.98px);
+@custom-media --viewport-xs (max-width: 743.98px);
+
+@custom-media --viewport-l-xl (min-width: 1240px);
+@custom-media --viewport-xs-m (max-width: 1239.98px);
+@custom-media --viewport-xs-s (max-width: 1023.98px);
+@custom-media --viewport-xs-l (max-width: 1799.98px);
+@custom-media --viewport-s-m (min-width: 744px) and (max-width: 1239.98px);

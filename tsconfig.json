@@ -20,6 +20,7 @@
     "outDir": "./dist", // Directorio de salida para los archivos .d.ts
     "baseUrl": "./",
     "paths": {
+      "@/*": ["src/*"],
       "@styles/*": ["src/styles/*"],
       "@components/*": ["src/components/*"]
     }

@@ -1,0 +1,145 @@
+@define-mixin font-detail-m-light {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-detail-m-light-weight);
+  font-size: var(--typography-detail-m-light-size);
+  line-height: var(--typography-detail-m-light-line-height);
+  letter-spacing: var(--typography-detail-m-light-letter-spacing);
+}
+
+@define-mixin font-detail-m-regular {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-detail-m-regular-weight);
+  font-size: var(--typography-detail-m-regular-size);
+  line-height: var(--typography-detail-m-regular-line-height);
+  letter-spacing: var(--typography-detail-m-regular-letter-spacing);
+}
+
+@define-mixin font-body-m-light {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-body-m-light-weight);
+  font-size: var(--typography-body-m-light-size);
+  line-height: var(--typography-body-m-light-line-height);
+  letter-spacing: var(--typography-body-m-light-letter-spacing);
+}
+
+@define-mixin font-body-m-regular {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-body-m-regular-weight);
+  font-size: var(--typography-body-m-regular-size);
+  line-height: var(--typography-body-m-regular-line-height);
+  letter-spacing: var(--typography-body-m-regular-letter-spacing);
+}
+
+@define-mixin font-body-l-light {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-body-l-light-weight);
+  font-size: var(--typography-body-l-light-size);
+  line-height: var(--typography-body-l-light-line-height);
+  letter-spacing: var(--typography-body-l-light-letter-spacing);
+}
+
+@define-mixin font-body-l-regular {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-body-l-regular-weight);
+  font-size: var(--typography-body-l-regular-size);
+  line-height: var(--typography-body-l-regular-line-height);
+  letter-spacing: var(--typography-body-l-regular-letter-spacing);
+}
+
+@define-mixin font-code-m {
+  font-family: var(--tempo-monospace-font-stack);
+  font-weight: var(--typography-code-m-weight);
+  font-size: var(--typography-code-m-size);
+  line-height: var(--typography-code-m-line-height);
+  letter-spacing: var(--typography-code-m-letter-spacing);
+}
+
+@define-mixin font-label-m-regular {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-label-m-regular-weight);
+  font-size: var(--typography-label-m-regular-size);
+  line-height: var(--typography-label-m-regular-line-height);
+  letter-spacing: var(--typography-label-m-regular-letter-spacing);
+  text-transform: var(--typography-label-m-regular-text-transform);
+}
+
+@define-mixin font-label-m-medium {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-label-m-medium-weight);
+  font-size: var(--typography-label-m-medium-size);
+  line-height: var(--typography-label-m-medium-line-height);
+  letter-spacing: var(--typography-label-m-medium-letter-spacing);
+  text-transform: var(--typography-label-m-medium-text-transform);
+}
+
+@define-mixin font-label-l-regular {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-label-l-regular-weight);
+  font-size: var(--typography-label-l-regular-size);
+  line-height: var(--typography-label-l-regular-line-height);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+}
+
+@define-mixin font-label-l-medium {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-label-l-medium-weight);
+  font-size: var(--typography-label-l-medium-size);
+  line-height: var(--typography-label-l-medium-line-height);
+  letter-spacing: var(--typography-label-l-medium-letter-spacing);
+  text-transform: var(--typography-label-l-medium-text-transform);
+}
+
+@define-mixin font-title-xs {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-title-xs-weight);
+  font-size: var(--typography-title-xs-size);
+  line-height: var(--typography-title-xs-line-height);
+  text-transform: var(--typography-title-xs-text-transform);
+  letter-spacing: var(--typography-title-xs-letter-spacing);
+}
+
+@define-mixin font-title-s {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-title-s-weight);
+  font-size: var(--typography-title-s-size);
+  line-height: var(--typography-title-s-line-height);
+  text-transform: var(--typography-title-s-text-transform);
+  letter-spacing: var(--typography-title-s-letter-spacing);
+}
+
+@define-mixin font-title-m {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-title-m-weight);
+  font-size: var(--typography-title-m-size);
+  line-height: var(--typography-title-m-line-height);
+  text-transform: var(--typography-title-m-text-transform);
+  letter-spacing: var(--typography-title-m-letter-spacing);
+}
+
+@define-mixin font-title-l {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-title-l-weight);
+  font-size: var(--typography-title-l-size);
+  line-height: var(--typography-title-l-line-height);
+  text-transform: var(--typography-title-l-text-transform);
+  letter-spacing: var(--typography-title-l-letter-spacing);
+}
+
+@define-mixin font-title-xl {
+  font-family: var(--tempo-proportional-font-stack);
+  font-weight: var(--typography-title-xl-weight);
+  font-size: var(--typography-title-xl-size);
+  line-height: var(--typography-title-xl-line-height);
+  text-transform: var(--typography-title-xl-text-transform);
+  letter-spacing: var(--typography-title-xl-letter-spacing);
+}
+
+@define-mixin font-title-2xl {
+  font-family: var(--typography-title-2xl-font);
+  font-weight: var(--typography-title-2xl-weight);
+  font-size: var(--typography-title-2xl-size);
+  line-height: var(--typography-title-2xl-line-height);
+  text-transform: var(--typography-title-2xl-text-transform);
+  letter-spacing: var(--typography-title-2xl-letter-spacing);
+}
