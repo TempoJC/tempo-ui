@@ -22,6 +22,55 @@ This library aims to provide a consistent set of UI components, developed using 
 
 The project follows a modular structure designed for easy component management and optimized bundling.
 
+tempo-ui/
+├── src/
+│ ├── components/
+│ │ ├── Button/
+│ │ │ ├── Button.jsx
+│ │ │ ├── Button.test.jsx
+│ │ │ └── index.js // Exports the Button component
+│ │ ├── Card/
+│ │ │ ├── Card.tsx
+│ │ │ ├── Card.test.tsx
+│ │ │ └── index.ts // Exports the Card component
+│ │ └── index.js // Re-exports all components for general import
+│ ├── hooks/
+│ │ └── useExample.js
+│ ├── utils/
+│ │ └── helpers.js
+│ ├── styles/ # Design System styles and tokens
+│ │ ├── breakpoint-sizes.js
+│ │ ├── breakpoint-sizes.test.js
+│ │ ├── colors.css
+│ │ ├── colors.mixins.css
+│ │ ├── fonts.css
+│ │ ├── foundations.css
+│ │ ├── globals-no-fonts.css
+│ │ ├── globals.css
+│ │ ├── grid.mixins.css
+│ │ ├── layers.css
+│ │ ├── neu-helvetica-custom.css
+│ │ ├── noto-sans-mono.css
+│ │ ├── noto-sans-sc.css
+│ │ ├── noto-sans-tc.css
+│ │ ├── sizing.css
+│ │ ├── typography.css
+│ │ ├── typography.mixins.css
+│ │ └── viewports.css
+│ ├── assets/
+│ │ └── fonts/ # Font files
+│ └── index.js // Main entry point for the library
+├── dist/ # Output directory for Vite build (compiled library)
+├── public/ # Static assets (if needed for development or specific use cases)
+├── .eslintrc.cjs # ESLint configuration for code quality
+├── .prettierrc.cjs # Prettier configuration for code formatting
+├── package.json # Project metadata and scripts
+├── vite.config.mjs # Vite build configuration
+├── jest.config.js # Jest test configuration
+├── tsconfig.json # TypeScript configuration for the library
+├── tsconfig.node.json # TypeScript configuration for Node.js specific files (e.g., vite.config)
+└── .gitignore # Specifies intentionally untracked files to ignore
+
 ### Explanation of the Structure:
 
 - **`src/components/`**: This directory houses all individual UI components. Each component resides in its own dedicated subfolder.
