@@ -22,44 +22,77 @@ This library aims to provide a consistent set of UI components, developed using 
 
 The project follows a modular structure designed for easy component management and optimized bundling.
 
+¡Claro! Quieres que la representación de la estructura de tu proyecto en el README.md se muestre correctamente y sea fácil de leer en GitHub (o cualquier renderizador de Markdown).
+
+La clave para que se vea bien es usar un bloque de código con sintaxis resaltada para archivos (a menudo tree o text, pero text es más seguro si no hay resaltado específico para tree) y asegurarte de que la indentación sea consistente.
+
+Aquí te muestro cómo debes formatearlo dentro de tu README.md:
+
+Markdown
+
+# tempo-ui
+
+A personal React component library.
+
+## Introduction
+
+`tempo-ui` is a personal React component library built with a focus on a fast and efficient development experience, powered by Vite. It's designed to be easily integrated into other React projects, allowing for selective component imports and leveraging modern bundling optimizations like tree-shaking.
+
+This library aims to provide a consistent set of UI components, developed using a combination of `.jsx` and `.tsx` for type safety where TypeScript is beneficial.
+
+## Features
+
+- **React-focused Development**: Pure React setup for building robust UI components.
+- **Vite Powered**: Leverages Vite for an incredibly fast development server and optimized builds.
+- **TypeScript Support**: Components can be written in TypeScript (`.tsx`) for enhanced type safety, alongside regular JavaScript (`.jsx`).
+- **Jest for Testing**: Comprehensive unit testing of components to ensure reliability.
+- **ESLint for Code Quality**: Maintains consistent code style and helps catch potential issues early.
+- **Tree-shaking Ready**: Designed for selective imports, ensuring consuming applications only bundle the components they use.
+- **Modular Styles**: Structured approach to managing design tokens and global styles.
+
+## Project Structure
+
+The project follows a modular structure designed for easy component management and optimized bundling.
+
+````text
 tempo-ui/
 ├── src/
-│ ├── components/
-│ │ ├── Button/
-│ │ │ ├── Button.jsx
-│ │ │ ├── Button.test.jsx
-│ │ │ └── index.js // Exports the Button component
-│ │ ├── Card/
-│ │ │ ├── Card.tsx
-│ │ │ ├── Card.test.tsx
-│ │ │ └── index.ts // Exports the Card component
-│ │ └── index.js // Re-exports all components for general import
-│ ├── hooks/
-│ │ └── useExample.js
-│ ├── utils/
-│ │ └── helpers.js
-│ ├── styles/ # Design System styles and tokens
-│ │ ├── breakpoint-sizes.js
-│ │ ├── breakpoint-sizes.test.js
-│ │ ├── colors.css
-│ │ ├── colors.mixins.css
-│ │ ├── fonts.css
-│ │ ├── foundations.css
-│ │ ├── globals-no-fonts.css
-│ │ ├── globals.css
-│ │ ├── grid.mixins.css
-│ │ ├── layers.css
-│ │ ├── neu-helvetica-custom.css
-│ │ ├── noto-sans-mono.css
-│ │ ├── noto-sans-sc.css
-│ │ ├── noto-sans-tc.css
-│ │ ├── sizing.css
-│ │ ├── typography.css
-│ │ ├── typography.mixins.css
-│ │ └── viewports.css
-│ ├── assets/
-│ │ └── fonts/ # Font files
-│ └── index.js // Main entry point for the library
+│   ├── components/
+│   │   ├── Button/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Button.test.jsx
+│   │   │   └── index.js // Exports the Button component
+│   │   ├── Card/
+│   │   │   ├── Card.tsx
+│   │   │   ├── Card.test.tsx
+│   │   │   └── index.ts // Exports the Card component
+│   │   └── index.js // Re-exports all components for general import
+│   ├── hooks/
+│   │   └── useExample.js
+│   ├── utils/
+│   │   └── helpers.js
+│   ├── styles/ # Design System styles and tokens
+│   │   ├── breakpoint-sizes.js
+│   │   ├── breakpoint-sizes.test.js
+│   │   ├── colors.css
+│   │   ├── colors.mixins.css
+│   │   ├── fonts.css
+│   │   ├── foundations.css
+│   │   ├── globals-no-fonts.css
+│   │   ├── globals.css
+│   │   ├── grid.mixins.css
+│   │   ├── layers.css
+│   │   ├── neu-helvetica-custom.css
+│   │   ├── noto-sans-mono.css
+│   │   ├── noto-sans-sc.css
+│   │   ├── noto-sans-tc.css
+│   │   ├── sizing.css
+│   │   ├── typography.css
+│   │   ├── typography.mixins.css
+│   │   └── viewports.css
+│   ├── assets/
+│   │   └── fonts/ # Font files
+│   └── index.js // Main entry point for the library
 ├── dist/ # Output directory for Vite build (compiled library)
 ├── public/ # Static assets (if needed for development or specific use cases)
 ├── .eslintrc.cjs # ESLint configuration for code quality
@@ -157,3 +190,4 @@ To get `tempo-ui` up and running on your local machine, follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+````
