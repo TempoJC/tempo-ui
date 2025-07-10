@@ -54,7 +54,7 @@ This library aims to provide a consistent set of UI components, developed using 
 
 The project follows a modular structure designed for easy component management and optimized bundling.
 
-````text
+```text
 tempo-ui/
 ├── src/
 │   ├── components/
@@ -103,6 +103,7 @@ tempo-ui/
 ├── tsconfig.json # TypeScript configuration for the library
 ├── tsconfig.node.json # TypeScript configuration for Node.js specific files (e.g., vite.config)
 └── .gitignore # Specifies intentionally untracked files to ignore
+```
 
 ### Explanation of the Structure:
 
@@ -190,4 +191,7 @@ To get `tempo-ui` up and running on your local machine, follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-````
+
+```
+
+```
