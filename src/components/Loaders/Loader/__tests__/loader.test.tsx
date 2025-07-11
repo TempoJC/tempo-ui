@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import Loader from "../Loader";
 
-describe("@amiga-fwk-web/components-feedback/loader", () => {
+describe("@tempo/loader", () => {
   it("renders", () => {
     const { container } = render(<Loader />);
     expect(container).toMatchSnapshot();

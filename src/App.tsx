@@ -1,3 +1,4 @@
+import Button from "./components/Controls/Button";
 import Icon from "./components/Icons/Icon";
 import Loader from "./components/Loaders/Loader";
 
@@ -9,6 +10,21 @@ function App() {
       <Loader size="small" />
       <Loader size="medium" />
       <Loader size="large" />
+      <Button
+        label={"Botón"}
+        onClick={() => {
+          console.log("¡Botón presionado!");
+        }}
+        kind="primary"
+      />
+      <Button
+        label={"Botón"}
+        onClick={() => {
+          console.log("¡Botón presionado!");
+        }}
+        kind="primary"
+        loading={true}
+      />
       {/* Aquí empezarás a importar y probar tus componentes */}
     </div>
   );

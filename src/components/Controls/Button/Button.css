@@ -1,0 +1,279 @@
+.tempo-button {
+  border: var(--tempo-border-width) solid var(--color-token-light-semantic-highlight);
+  outline: 0 none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(15px - var(--tempo-border-width)) var(--size7);
+  white-space: nowrap;
+  font: var(--typography-label-l-regular-font);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+  position: relative;
+  max-width: 100%;
+}
+
+.tempo-button--extra {
+  padding: calc(19px - var(--tempo-border-width)) var(--size7);
+}
+
+.tempo-button--icon {
+  padding: calc(14px - var(--tempo-border-width));
+}
+
+.tempo-button--icon.tempo-button--extra {
+  padding: calc(18px - var(--tempo-border-width));
+}
+
+.tempo-button--icon-and-label {
+  padding: calc(14px - var(--tempo-border-width)) var(--size7);
+}
+
+.tempo-button--icon-and-label.tempo-button--extra {
+  padding: calc(18px - var(--tempo-border-width)) var(--size7);
+}
+
+.tempo-button--dropdown {
+  padding: calc(14px - var(--tempo-border-width));
+  padding-left: var(--size6);
+}
+
+.tempo-button--dropdown.tempo-button--extra {
+  padding: calc(18px - var(--tempo-border-width));
+  padding-left: var(--size6);
+}
+
+@media (--viewport-l-xl) {
+  .tempo-button {
+    padding: calc(11px - var(--tempo-border-width)) var(--size7);
+  }
+
+  .tempo-button--extra {
+    padding: calc(15px - var(--tempo-border-width)) var(--size7);
+  }
+
+  .tempo-button--icon {
+    padding: calc(10px - var(--tempo-border-width));
+  }
+
+  .tempo-button--icon.tempo-button--extra {
+    padding: calc(14px - var(--tempo-border-width));
+  }
+
+  .tempo-button--icon-and-label {
+    padding: calc(10px - var(--tempo-border-width)) var(--size7);
+  }
+
+  .tempo-button--icon-and-label.tempo-button--extra {
+    padding: calc(14px - var(--tempo-border-width)) var(--size7);
+  }
+
+  .tempo-button--dropdown {
+    padding: calc(10px - var(--tempo-border-width));
+    padding-left: var(--size5);
+  }
+
+  .tempo-button--dropdown.tempo-button--extra {
+    padding: calc(14px - var(--tempo-border-width));
+    padding-left: var(--size5);
+  }
+}
+
+.tempo-button--standard {
+  color: var(--color-token-light-content-1);
+  background: transparent;
+}
+.tempo-button--color-dark.tempo-button--standard {
+  color: var(--color-token-dark-content-1);
+  border-color: var(--color-token-dark-semantic-highlight);
+}
+
+.tempo-button:focus-visible,
+.tempo-button--loading:focus-visible {
+  background: var(--color-token-light-semantic-highlight-2);
+  color: var(--color-token-light-content-inverse);
+}
+
+/* Higher specificity needed to override colors depending on the button type */
+.tempo-button.tempo-button--color-dark:focus-visible {
+  background: var(--color-token-dark-semantic-highlight-2);
+  color: var(--color-token-dark-content-1);
+}
+
+.tempo-button--standard:hover {
+  cursor: pointer;
+  color: var(--color-token-light-content-hover);
+  border-color: var(--color-token-light-semantic-highlight-hover);
+}
+.tempo-button--color-dark.tempo-button--standard:hover {
+  color: var(--color-token-dark-content-hover);
+  border-color: var(--color-token-dark-semantic-highlight-hover);
+}
+
+.tempo-button--standard:active {
+  color: var(--color-token-light-content-active);
+  border-color: var(--color-token-light-semantic-highlight-active);
+}
+.tempo-button--color-dark.tempo-button--standard:active {
+  color: var(--color-token-dark-content-active);
+  border-color: var(--color-token-dark-semantic-highlight-active);
+}
+
+.tempo-button--standard:disabled {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  border-color: var(--color-token-light-border-3);
+}
+.tempo-button--color-dark.tempo-button--standard:disabled {
+  color: var(--color-token-dark-content-disabled);
+  border-color: var(--color-token-dark-border-3);
+}
+
+.tempo-button--standard.tempo-button--loading {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  border-color: var(--color-token-light-border-3);
+}
+.tempo-button--color-dark.tempo-button--standard.tempo-button--loading {
+  color: var(--color-token-dark-content-disabled);
+  border-color: var(--color-token-dark-border-3);
+}
+
+.tempo-button--primary {
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-highlight);
+  border-color: transparent;
+}
+.tempo-button--color-dark.tempo-button--primary {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-highlight);
+}
+
+.tempo-button--primary:hover {
+  cursor: pointer;
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-highlight-hover);
+}
+.tempo-button--color-dark.tempo-button--primary:hover {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-highlight-hover);
+}
+
+.tempo-button--primary:active {
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-highlight-active);
+}
+.tempo-button--color-dark.tempo-button--primary:active {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-highlight-active);
+}
+
+.tempo-button--primary:disabled {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  background: var(--color-token-light-background-disabled);
+}
+
+.tempo-button--color-dark.tempo-button--primary:disabled {
+  color: var(--color-token-dark-content-disabled);
+  background: var(--color-token-dark-background-disabled);
+}
+
+.tempo-button--primary.tempo-button--loading {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  background: var(--color-token-light-background-disabled);
+  border-color: var(--color-token-light-border-3);
+}
+.tempo-button--color-dark.tempo-button--primary.tempo-button--loading {
+  color: var(--color-token-dark-content-disabled);
+  background: var(--color-token-dark-background-disabled);
+  border-color: var(--color-token-dark-border-3);
+}
+
+.tempo-button--danger {
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-danger);
+  border-color: transparent;
+}
+.tempo-button--color-dark.tempo-button--danger {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-danger);
+}
+
+.tempo-button--danger:hover {
+  cursor: pointer;
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-danger-hover);
+}
+.tempo-button--color-dark.tempo-button--danger:hover {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-danger-hover);
+}
+
+.tempo-button--danger:active {
+  color: var(--color-token-light-content-inverse);
+  background: var(--color-token-light-semantic-danger-active);
+}
+.tempo-button--color-dark.tempo-button--danger:active {
+  color: var(--color-token-dark-content-inverse);
+  background: var(--color-token-dark-semantic-danger-active);
+}
+
+.tempo-button--danger:disabled {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  background: var(--color-token-light-background-disabled);
+}
+.tempo-button--color-dark.tempo-button--danger:disabled {
+  color: var(--color-token-dark-content-disabled);
+  background: var(--color-token-dark-background-disabled);
+}
+
+.tempo-button--danger.tempo-button--loading {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+  background: var(--color-token-light-background-disabled);
+  border-color: var(--color-token-light-border-3);
+}
+.tempo-button--color-dark.tempo-button--danger.tempo-button--loading {
+  color: var(--color-token-dark-content-disabled);
+  background: var(--color-token-dark-background-disabled);
+  border-color: var(--color-token-dark-border-3);
+}
+
+.tempo-button--dropdown .tempo-button__content > * + * {
+  margin-left: var(--size1);
+}
+
+.tempo-button__content > * + * {
+  margin-left: var(--size1);
+}
+
+.tempo-button--full-width {
+  width: 100%;
+  justify-content: center;
+}
+
+.tempo-button__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Specificity problems... */
+.tempo-button .tempo-button__loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tempo-button__content {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.tempo-button__content--loading {
+  visibility: hidden;
+}
