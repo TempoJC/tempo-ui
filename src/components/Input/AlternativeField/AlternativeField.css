@@ -1,0 +1,55 @@
+.tempo-alternative-field__input {
+  display: flex;
+  align-items: center;
+}
+
+@define-mixin required-alternative-field-label {
+  .tempo-alternative-field--required &:after {
+    content: "*";
+    display: inline-block;
+    padding-left: var(--size1);
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+.tempo-alternative-field__label {
+  display: block;
+  color: var(--color-token-light-content-3);
+  font: var(--typography-detail-m-regular-font);
+  letter-spacing: var(--typography-detail-m-regular-letter-spacing);
+  margin-bottom: calc(var(--size2) + 1px);
+
+  .tempo-alternative-field--color-dark & {
+    color: var(--color-token-dark-content-3);
+  }
+
+  @mixin required-alternative-field-label;
+}
+
+.tempo-alternative-field--dense .tempo-alternative-field__label {
+  margin-bottom: 0;
+}
+
+@media (--viewport-xs-m) {
+  .tempo-alternative-field__label {
+    font: var(--typography-body-m-regular-font);
+    letter-spacing: var(--typography-body-m-regular-letter-spacing);
+  }
+}
+
+.tempo-alternative-field__label--has-error {
+  color: var(--color-token-light-semantic-danger);
+
+  .tempo-alternative-field--color-dark & {
+    color: var(--color-token-dark-semantic-danger);
+  }
+}
+
+.tempo-alternative-field__label--disabled {
+  color: var(--color-token-light-content-disabled);
+
+  .tempo-alternative-field--color-dark & {
+    color: var(--color-token-dark-content-disabled);
+  }
+}

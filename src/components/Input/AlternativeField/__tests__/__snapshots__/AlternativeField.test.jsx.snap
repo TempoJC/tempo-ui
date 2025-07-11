@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/Input/AlternativeField renders 1`] = `
+<div>
+  <div
+    class="tempo-alternative-field"
+  >
+    <div
+      class="tempo-alternative-field__input"
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`@tempo/loader renders 1`] = `
+exports[`@tempo-ui/Loaders/loader renders 1`] = `
 <div>
   <span
     class="tempo-loader tempo-loader--light tempo-loader--circular tempo-loader--circular-large"

@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import Loader from "../Loader";
 
-describe("@tempo/loader", () => {
+describe("@tempo-ui/Loaders/loader", () => {
   it("renders", () => {
     const { container } = render(<Loader />);
     expect(container).toMatchSnapshot();
