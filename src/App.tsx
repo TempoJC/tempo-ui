@@ -1,4 +1,4 @@
-import { Icon, Loader, Button, Checkbox, ActionButton } from "./components";
+import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,20 @@ function App() {
       <Loader size="small" />
       <Loader size="medium" />
       <Loader size="large" />
+      <SwitchButton
+        icon={<>Switch</>}
+        selected={true}
+        onClick={() => console.log("SwitchButton clicked")}
+        onMouseDown={() => console.log("Mouse down on SwitchButton")}
+        onMouseUp={() => console.log("Mouse up on SwitchButton")}
+        onMouseEnter={() => console.log("Mouse entered SwitchButton")}
+        onMouseLeave={() => console.log("Mouse left SwitchButton")}
+        onTouchStart={() => console.log("Touch started on SwitchButton")}
+        onTouchEnd={() => console.log("Touch ended on SwitchButton")}
+        disabled={false}
+        autoFocus={false}
+        tabIndex={0}
+      />
       <ActionButton
         label="Acción"
         onClick={() => console.log("¡Acción ejecutada!")}
