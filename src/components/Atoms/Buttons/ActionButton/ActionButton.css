@@ -1,0 +1,186 @@
+.tempo-action-button {
+  border: 0;
+  outline: 0 none;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  white-space: nowrap;
+  max-width: 100%;
+  font: var(--typography-label-l-regular-font);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+}
+
+.tempo-action-button--badge {
+  position: absolute;
+  top: calc(var(--size2) - 2px);
+  left: calc(100% - var(--size2));
+}
+
+.tempo-action-button--icon {
+  padding: calc(var(--size3) + 2px) 0;
+}
+
+.tempo-action-button--dropdown {
+  padding: calc(var(--size3) + 2px) 0;
+}
+
+@media (--viewport-l-xl) {
+  .tempo-action-button {
+    padding: 11px 0;
+  }
+
+  .tempo-action-button--icon {
+    padding: calc(var(--size3) - 2px) 0;
+  }
+
+  .tempo-action-button--dropdown {
+    padding: calc(var(--size2) + 2px) 0;
+  }
+
+  .tempo-action-button--badge {
+    top: calc(var(--size1) - 2px);
+  }
+}
+
+.tempo-action-button--standard {
+  color: var(--color-token-light-content-1);
+  background: transparent;
+}
+.tempo-action-button--color-dark.tempo-action-button--standard {
+  color: var(--color-token-dark-content-1);
+}
+
+.tempo-action-button--standard:hover {
+  cursor: pointer;
+  color: var(--color-token-light-content-hover);
+}
+.tempo-action-button--color-dark.tempo-action-button--standard:hover {
+  color: var(--color-token-dark-content-hover);
+}
+
+.tempo-action-button--standard:active {
+  color: var(--color-token-light-content-active);
+}
+.tempo-action-button--color-dark.tempo-action-button--standard:active {
+  color: var(--color-token-dark-content-active);
+}
+
+.tempo-action-button--standard:disabled {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+}
+.tempo-action-button--color-dark.tempo-action-button--standard:disabled {
+  color: var(--color-token-dark-content-disabled);
+}
+
+.tempo-action-button--danger {
+  color: var(--color-token-light-semantic-danger);
+  background: transparent;
+}
+.tempo-action-button--color-dark.tempo-action-button--danger {
+  color: var(--color-token-dark-semantic-danger);
+}
+
+.tempo-action-button--danger:hover {
+  cursor: pointer;
+  color: var(--color-token-light-semantic-danger-hover);
+}
+.tempo-action-button--color-dark.tempo-action-button--danger:hover {
+  color: var(--color-token-dark-semantic-danger-hover);
+}
+
+.tempo-action-button--danger:active {
+  color: var(--color-token-light-semantic-danger-active);
+}
+.tempo-action-button--color-dark.tempo-action-button--danger:active {
+  color: var(--color-token-dark-semantic-danger-active);
+}
+
+.tempo-action-button--danger:disabled {
+  cursor: default;
+  color: var(--color-token-light-content-disabled);
+}
+.tempo-action-button--color-dark.tempo-action-button--danger:disabled {
+  color: var(--color-token-dark-content-disabled);
+}
+
+.tempo-action-button:focus {
+  outline: 1px solid var(--color-token-light-semantic-highlight-2);
+}
+
+.tempo-action-button:focus:not(:focus-visible) {
+  outline: unset;
+}
+
+.tempo-action-button--color-dark:focus {
+  outline: 1px solid var(--color-token-dark-semantic-highlight-2);
+}
+
+.tempo-action-button--color-dark:focus:not(:focus-visible) {
+  outline: unset;
+}
+
+.tempo-action-button--just-icon:focus {
+  outline: 0 none;
+}
+
+.tempo-action-button--just-icon .tempo-action-button__loader {
+  /* For the loader to have the same size as an icon (20px) */
+  padding: 3px;
+}
+
+.tempo-action-button--just-icon:focus .tempo-action-button__icon-wrapper,
+.tempo-action-button--just-icon:focus .tempo-action-button__loader {
+  outline: 1px solid var(--color-token-light-semantic-highlight-2);
+}
+
+.tempo-action-button--just-icon:focus:not(:focus-visible) .tempo-action-button__icon-wrapper,
+.tempo-action-button--just-icon:focus:not(:focus-visible) .tempo-action-button__loader {
+  outline: unset;
+}
+
+.tempo-action-button--color-dark.tempo-action-button--just-icon:focus .tempo-action-button__icon-wrapper,
+.tempo-action-button--color-dark.tempo-action-button--just-icon:focus .tempo-action-button__loader {
+  outline: 1px solid var(--color-token-dark-semantic-highlight-2);
+}
+
+.tempo-action-button--color-dark.tempo-action-button--just-icon:focus:not(:focus-visible)
+  .tempo-action-button__icon-wrapper,
+.tempo-action-button--color-dark.tempo-action-button--just-icon:focus:not(:focus-visible) .tempo-action-button__loader {
+  outline: unset;
+}
+
+.tempo-action-button__content > * + * {
+  margin-left: var(--size1);
+}
+
+.tempo-action-button--full-width {
+  width: 100%;
+  justify-content: center;
+}
+
+.tempo-action-button__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Specificity problems... */
+.tempo-action-button .tempo-action-button__loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tempo-action-button__content {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.tempo-action-button__content--loading {
+  visibility: hidden;
+}

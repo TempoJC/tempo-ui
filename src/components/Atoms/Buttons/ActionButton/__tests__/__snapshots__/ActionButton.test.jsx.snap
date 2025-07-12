@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/Atoms/Buttons/ActionButton enabled renders 1`] = `
+<div>
+  <button
+    class="tempo-action-button tempo-action-button--standard"
+    data-testid="action-button-icon"
+    type="button"
+  >
+    <div
+      class="tempo-action-button__content"
+    >
+      <span
+        class="tempo-action-button__label"
+      >
+        enabled
+      </span>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`@tempo-ui/Atoms/Buttons/ActionButton with icons renders the icon after the label when iconEnd & label are present 1`] = `
+<DocumentFragment>
+  <button
+    class="customClass tempo-action-button tempo-action-button--icon tempo-action-button--standard"
+    type="button"
+  >
+    <div
+      class="tempo-action-button__content"
+    >
+      <span
+        class="tempo-action-button__label"
+      >
+        icon after
+      </span>
+      <span
+        class="tempo-action-button__icon-wrapper"
+      >
+        <div>
+          icon
+        </div>
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Buttons/ActionButton with icons renders the icon before the label when iconStart & label are present 1`] = `
+<DocumentFragment>
+  <button
+    class="customClass tempo-action-button tempo-action-button--icon tempo-action-button--standard"
+    type="button"
+  >
+    <div
+      class="tempo-action-button__content"
+    >
+      <span
+        class="tempo-action-button__icon-wrapper"
+      >
+        <div>
+          icon
+        </div>
+      </span>
+      <span
+        class="tempo-action-button__label"
+      >
+        icon before
+      </span>
+    </div>
+  </button>
+</DocumentFragment>
+`;
