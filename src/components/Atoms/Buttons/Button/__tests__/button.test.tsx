@@ -4,11 +4,10 @@ import Button from "../Button";
 
 // This is crucial to isolate Button's tests from Icon's internal logic,
 // including its asynchronous SVG loading and any bundler-specific features like import.meta.glob.
-jest.mock("@components/Icons/Icon", () => ({
-  __esModule: true,
+jest.mock("@components/Atoms/Icons/Icon", () => ({
   // For a React component, Jest needs to mock the component function itself.
   // We use jest.fn() to create a mock function that will behave like a React component.
-  default: jest.fn(({ group, name, className, ...props }) => {
+  Icon: jest.fn(({ group, name, className, ...props }) => {
     // Return a simple SVG element or a div to simulate the icon's presence.
     // It's important to pass relevant props as data-attributes to allow testing Button's usage.
     return (
@@ -25,9 +24,8 @@ jest.mock("@components/Icons/Icon", () => ({
 
 // Similar to Icon, we mock Loader to prevent its internal logic from running
 // and to isolate Button's tests from Loader's implementation details.
-jest.mock("@components/Loaders/Loader", () => ({
-  __esModule: true,
-  default: jest.fn(({ className, size, color, ...props }) => {
+jest.mock("@components/Feedback/Loader", () => ({
+  Loader: jest.fn(({ className, size, color, ...props }) => {
     // Return a simple div. It's important to:
     // 1. Have a data-testid for easy lookup.
     // 2. Apply the 'className' passed by Button, if the test verifies it.
@@ -44,12 +42,12 @@ jest.mock("@components/Loaders/Loader", () => ({
 }));
 
 // Import the mocked components to access their Jest mock functions (e.g., for .mockClear()).
-import Icon from "@components/Icons/Icon";
-import Loader from "@components/Loaders/Loader";
+import { Icon } from "@components/Atoms/Icons/Icon";
+import { Loader } from "@components/Feedback/Loader";
 const MockedIcon = Icon as jest.Mock; // Type the mock for better IntelliSense and Jest matchers
 const MockedLoader = Loader as jest.Mock; // Type the mock for Loader
 
-describe("@tempo-ui/Controls/button", () => {
+describe("@tempo-ui/Atoms/Buttons/button", () => {
   // Clear the mocks before each test to ensure a clean state and prevent test interference.
   beforeEach(() => {
     MockedIcon.mockClear();

@@ -1,1 +1,1 @@
-export { default } from "./AlternativeField.jsx";
+export { default as AlternativeField } from "./AlternativeField";

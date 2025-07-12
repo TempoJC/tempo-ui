@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`@tempo-ui/Controls/button enabled renders 1`] = `
+exports[`@tempo-ui/Atoms/Buttons/button enabled renders 1`] = `
 <DocumentFragment>
   <button
     class="tempo-button tempo-button--standard tempo-button--icon-and-label"
