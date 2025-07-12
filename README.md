@@ -20,20 +20,45 @@ This library aims to provide a consistent set of UI components, developed using 
 
 ## Project Structure
 
-The project follows a modular structure designed for easy component management and optimized bundling.
+The project follows a modular structure designed for easy component management and optimized bundling, categorizing components by their core functionality and complexity.
 
 ```text
 tempo-ui/
 ├── src/
 │   ├── components/
-│   │   ├── Button/
-│   │   │   ├── Button.jsx
-│   │   │   ├── Button.test.jsx
-│   │   │   └── index.js // Exports the Button component
-│   │   ├── Card/
-│   │   │   ├── Card.tsx
-│   │   │   ├── Card.test.tsx
-│   │   │   └── index.ts // Exports the Card component
+│   │   ├── Atoms/ # Basic, fundamental UI building blocks (e.g., HTML-native wrappers)
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.jsx
+│   │   │   │   ├── Button.test.jsx
+│   │   │   │   └── index.js // Exports the Button component
+│   │   │   ├── Icon/
+│   │   │       ├── Icon.tsx
+│   │   │       ├── Icon.test.tsx
+│   │   │       ├── iconSvgs.ts
+│   │   │       ├── useSvgLoader.ts
+│   │   │       └── index.ts // Exports the Icon component
+
+│   │   ├── Form/ # Components related to form structure and input
+│   │   │   ├── AlternativeField/ # Generic form field wrapper
+│   │   │       ├── AlternativeField.jsx
+│   │   │       └── index.js
+│   │   ├── DataDisplay/ # Components for structured data visualization
+│   │   │   └── Table/ # Example: Future table component
+│   │   │       └── ...
+│   │   ├── Feedback/ # Components for user feedback (e.g., loaders, messages)
+│   │   │   ├── Loader/
+│   │   │   │   ├── Loader.jsx
+│   │   │   │   └── index.js
+│   │   │   └── Spinner/ # Example: Future spinner component
+│   │   │       └── ...
+│   │   ├── Overlays/ # Components that appear over the main content (e.g., modals, tooltips)
+│   │   │   ├── Modal/ # Example: Future modal component
+│   │   │   │   └── ...
+│   │   │   └── Tooltip/ # Example: Future tooltip component
+│   │   │       └── ...
+│   │   ├── Layout/ # Components for arranging other components on the page
+│   │   │   ├── Grid/ # Example: Future grid layout component
+│   │   │       └── ...
 │   │   └── index.js // Re-exports all components for general import
 │   ├── hooks/
 │   │   └── useExample.js
@@ -75,16 +100,22 @@ tempo-ui/
 
 ### Explanation of the Structure:
 
-- **`src/components/`**: This directory houses all individual UI components. Each component resides in its own dedicated subfolder.
-- **`src/components/[Component]/index.js` (or `.ts`)**: This file is crucial for enabling selective imports. It serves as the entry point for each specific component, exporting its main functionality. This allows consumers to import components like `import { Button } from 'tempo-ui';`.
-- **`src/components/index.js`**: This file re-exports all individual components. While individual imports are preferred for tree-shaking, this file provides an option for bulk imports if desired (e.g., `import * as TempoUI from 'tempo-ui';`).
+- **`src/components/`**: This directory houses all individual UI components, now organized into functional categories to improve clarity and navigation.
+  - **`Atoms/`**: Contains the most basic, fundamental UI building blocks, often wrapping native HTML elements with minimal styling. (e.g., `Button`, `Icon`, `NativeCheckbox`).
+  - **`Form/`**: Houses components specifically designed for form structures and user input. (e.g., `Checkbox` (the wrapped one), `AlternativeField`, `TextField`).
+  - **`DataDisplay/`**: Groups components used primarily for displaying structured data. (e.g., `Card`, `Table`, `List`).
+  - **`Feedback/`**: Contains components that provide feedback to the user. (e.g., `Loader`, `Spinner`, `Toast`).
+  - **`Overlays/`**: Includes components that typically appear over the main content, such as modals or tooltips. (e.g., `Modal`, `Tooltip`).
+  - **`Layout/`**: Houses components responsible for arranging other components on the page. (e.g., `Grid`, `Stack`).
+- **`src/components/[Category]/[Component]/index.js` (or `.ts`)**: This file is crucial for enabling selective imports. It serves as the entry point for each specific component, exporting its main functionality. This allows consumers to import components like `import { Button } from 'tempo-ui/components/Atoms/Button';` (or through the main `index.js`).
+- **`src/components/index.js`**: This file re-exports all individual components from their respective categories. While individual imports are preferred for tree-shaking, this file provides an option for bulk imports if desired (e.g., `import * as TempoUI from 'tempo-ui/components';`).
 - **`src/hooks/`**: Directory for custom React hooks that might be exposed by the library.
 - **`src/utils/`**: Directory for general utility functions not specific to components.
 - **`src/styles/`**: Centralized location for the design system's styles, including global CSS, design tokens (colors, typography, sizing, breakpoints), and CSS mixins.
 - **`src/assets/fonts/`**: Contains actual font files (e.g., `.woff`, `.ttf`) used in the design system.
 - **`src/index.js`**: The primary entry point for the entire `tempo-ui` library. It re-exports all components, hooks, and utilities intended for public consumption.
 - **`dist/`**: The output directory where Vite compiles the entire library for distribution. This is what consuming projects will import.
-- **`public/`**: Contains static assets that might be served directly by Vite's development server or included in the final build if needed.
+- **`public/`**: Contains static assets that might be served directly by Vite's development server or included in the final use cases.
 - **`.eslintrc.cjs`**: Configuration file for ESLint, ensuring consistent code style and catching potential errors.
 - **`.prettierrc.cjs`**: Configuration file for Prettier, used for automatic code formatting.
 - **`package.json`**: Defines the project's metadata, scripts (like `dev`, `build`, `test`), and dependencies.

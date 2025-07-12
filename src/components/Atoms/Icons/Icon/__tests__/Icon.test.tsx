@@ -21,7 +21,7 @@ jest.mock("./../iconSvgs", () => ({
 // This import now points to the mock defined above, not the real module.
 import { getIconSvg } from "./../iconSvgs";
 
-describe("@tempo-ui/Icons/Icon", () => {
+describe("@tempo-ui/Atoms/Icons/Icon", () => {
   // Before each test, clear any mock calls to ensure test isolation.
   beforeEach(() => {
     (getIconSvg as jest.Mock).mockClear();
