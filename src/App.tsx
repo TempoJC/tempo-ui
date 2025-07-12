@@ -1,4 +1,4 @@
-import { Icon, Loader, Button } from "./components";
+import { Icon, Loader, Button, Checkbox } from "./components";
 
 function App() {
   return (
@@ -23,7 +23,8 @@ function App() {
         kind="primary"
         loading={true}
       />
-
+      <Checkbox label="Default checkbox" value={true} onChange={() => {}} />
+      <Checkbox label="Default checkbox" value={false} onChange={() => {}} />
       {/* Aquí empezarás a importar y probar tus componentes */}
     </div>
   );
