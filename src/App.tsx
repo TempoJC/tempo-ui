@@ -1,6 +1,4 @@
-import Button from "./components/Controls/Button";
-import Icon from "./components/Icons/Icon";
-import Loader from "./components/Loaders/Loader";
+import { Icon, Loader, Button } from "./components";
 
 function App() {
   return (
@@ -25,6 +23,7 @@ function App() {
         kind="primary"
         loading={true}
       />
+
       {/* Aquí empezarás a importar y probar tus componentes */}
     </div>
   );

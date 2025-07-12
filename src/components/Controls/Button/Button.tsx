@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import cn from "classnames";
-import Loader from "@components/Loaders/Loader";
-import Icon from "@components/Icons/Icon";
+import { Loader } from "@components/Loaders/Loader";
+import { Icon } from "@components/Icons/Icon";
 import type { ButtonProps } from "./types";
 import "./Button.css";
 

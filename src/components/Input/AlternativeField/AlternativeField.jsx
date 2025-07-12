@@ -1,8 +1,8 @@
 import { useState } from "react";
 import cn from "classnames";
-import InputInfo from "./AlternativeFieldInputInfo.jsx";
 import { TabIndexContextProvider } from "@/hooks/index.js";
 import { is, noop } from "@/utils";
+import InputInfo from "./AlternativeFieldInputInfo.jsx";
 import "./AlternativeField.css";
 
 /**

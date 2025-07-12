@@ -1,4 +1,4 @@
-import is from "../is";
+import is from "./is";
 
 describe("is", () => {
   it("checks if something is of type", () => {
