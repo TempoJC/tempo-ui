@@ -1,4 +1,4 @@
-import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge } from "./components";
+import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge, Avatar } from "./components";
 
 function App() {
   return (
@@ -12,6 +12,9 @@ function App() {
       <Badge text="2" variant="blackberry" testId="badge-blackberry" />
       <Badge text="3" variant="cherry" testId="badge-cherry" />
       <Badge text="4" variant="apricot" testId="badge-apricot" />
+      <Avatar initials="JG" imageUrl="http://some.avatar/url" color="light" shape="circle" />
+      <Avatar initials="JG" imageUrl="http://some.avatar/url" color="dark" shape="circle" size="medium" />
+      <Avatar initials="JG" imageUrl="http://some.avatar/url" color="dark" size="medium" />
       <SwitchButton
         icon={<>Switch</>}
         selected={true}

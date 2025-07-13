@@ -1,0 +1,63 @@
+.tempo-avatar {
+  background: var(--color-token-light-background-2);
+  width: var(--size7);
+  height: var(--size7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  color: var(--color-token-light-content-1);
+  font: var(--typography-label-l-regular-font);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+  box-sizing: border-box;
+}
+
+.tempo-avatar--circle {
+  border-radius: 100%;
+}
+
+.tempo-avatar--color-dark {
+  color: var(--color-token-dark-content-1);
+  background: var(--color-token-dark-background-2);
+}
+
+.tempo-avatar--large {
+  font: var(--typography-title-m-font);
+  text-transform: var(--typography-title-m-text-transform);
+  letter-spacing: var(--typography-title-m-letter-spacing);
+  height: var(--size11);
+  width: var(--size11);
+}
+
+.tempo-avatar--medium {
+  font: var(--typography-title-s-font);
+  text-transform: var(--typography-title-s-text-transform);
+  letter-spacing: var(--typography-title-s-letter-spacing);
+  height: var(--size9);
+  width: var(--size9);
+}
+
+.tempo-avatar--clickable {
+  cursor: pointer;
+}
+
+.tempo-avatar__image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.tempo-avatar--outlined {
+  border: var(--tempo-border-width) solid var(--color-token-light-border-1);
+  background: var(--color-token-light-background-1);
+}
+
+.tempo-avatar--color-dark.tempo-avatar--outlined {
+  border: var(--tempo-border-width) solid var(--color-token-dark-border-1);
+  background: var(--color-token-dark-background-1);
+}
