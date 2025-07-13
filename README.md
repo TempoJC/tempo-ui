@@ -42,7 +42,7 @@ tempo-ui/
 │   │   │   ├── AlternativeField/ # Generic form field wrapper
 │   │   │       ├── AlternativeField.jsx
 │   │   │       └── index.js
-│   │   ├── DataDisplay/ # Components for structured data visualization
+│   │   ├── DataGrid/ # Components for structured data visualization
 │   │   │   └── Table/ # Example: Future table component
 │   │   │       └── ...
 │   │   ├── Feedback/ # Components for user feedback (e.g., loaders, messages)
