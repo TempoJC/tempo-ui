@@ -1,4 +1,4 @@
-import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton } from "./components";
+import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,10 @@ function App() {
       <Loader size="small" />
       <Loader size="medium" />
       <Loader size="large" />
+      <Badge text="1" variant="coconut" testId="badge-coconut" />
+      <Badge text="2" variant="blackberry" testId="badge-blackberry" />
+      <Badge text="3" variant="cherry" testId="badge-cherry" />
+      <Badge text="4" variant="apricot" testId="badge-apricot" />
       <SwitchButton
         icon={<>Switch</>}
         selected={true}

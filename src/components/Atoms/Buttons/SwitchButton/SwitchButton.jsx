@@ -1,7 +1,7 @@
 import { forwardRef, useEffect } from "react";
 import cn from "classnames";
-import useSyncedRef from "@/hooks/useSyncedRef";
 import "./SwitchButton.css";
+import { useSyncedRef } from "@/hooks";
 
 /**
  * Use this component to show a switch button.
