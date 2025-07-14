@@ -1,4 +1,20 @@
-import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge, Avatar, Divider } from "./components";
+import {
+  Icon,
+  Loader,
+  Button,
+  Checkbox,
+  ActionButton,
+  SwitchButton,
+  Badge,
+  Avatar,
+  Divider,
+  Card,
+  CardHeader,
+  CardHeaderImage,
+  CardHeaderContent,
+  CardContentImage,
+  CardFooter,
+} from "@/components";
 
 function App() {
   return (
@@ -33,7 +49,7 @@ function App() {
         autoFocus={false}
         tabIndex={0}
       />
-
+      <Divider kind="horizontal" contrast="high" />
       <ActionButton
         label="Acción"
         onClick={() => console.log("¡Acción ejecutada!")}
@@ -42,6 +58,7 @@ function App() {
         iconEnd={<Icon group="arrows" name="chevron-down-outlined" />}
         loading={false}
       />
+      <Divider kind="horizontal" contrast="high" />
       <Button
         label={"Botón"}
         onClick={() => {
@@ -70,8 +87,20 @@ function App() {
         iconEnd={<Icon group="arrows" name="chevron-down-outlined" />}
         loading={false}
       />
+      <Divider kind="horizontal" contrast="high" />
       <Checkbox label="Default checkbox" value={true} onChange={() => {}} />
       <Checkbox label="Default checkbox" value={false} onChange={() => {}} />
+      <Divider kind="horizontal" contrast="high" />
+      {/* Ejemplo de uso de Card y sus subcomponentes */}
+      <Card className="customCardClass">
+        <CardHeader className="customHeaderClass">
+          <CardHeaderImage src="https://picsum.photos/id/237/200/300" className="customHeaderImageClass" />
+          <CardHeaderContent className="customHeaderContentClass">Lorem ipsum dolor sit amet.</CardHeaderContent>
+        </CardHeader>
+        <CardContentImage className="customContentImageClass" src="https://picsum.photos/id/1084/536/354" />
+        <CardFooter className="customFooterClass">Footer content</CardFooter>
+      </Card>
+
       {/* Aquí empezarás a importar y probar tus componentes */}
     </div>
   );
