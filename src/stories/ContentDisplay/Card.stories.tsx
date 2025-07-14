@@ -1,3 +1,4 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card, CardHeader, CardHeaderImage, CardHeaderContent, CardContentImage, CardFooter } from "@/components";
 
@@ -71,4 +72,7 @@ export const Dark: Story = {
       </Card>
     ),
   },
+  decorators: [
+    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
+  ],
 };

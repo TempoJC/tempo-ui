@@ -1,3 +1,4 @@
+import React from "react";
 import { SwitchButton } from "@/components";
 import { fn } from "storybook/test";
 
@@ -61,4 +62,7 @@ export const Dark = {
     icon: "💡",
     color: "dark",
   },
+  decorators: [
+    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
+  ],
 };

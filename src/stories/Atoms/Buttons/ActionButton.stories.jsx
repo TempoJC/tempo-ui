@@ -1,3 +1,4 @@
+import React from "react";
 import { ActionButton } from "@/components";
 import { fn } from "storybook/test";
 
@@ -65,6 +66,9 @@ export const Dark = {
     label: "Dark Button",
     color: "dark",
   },
+  decorators: [
+    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
+  ],
 };
 
 export const Disabled = {

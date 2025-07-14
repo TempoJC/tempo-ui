@@ -84,9 +84,8 @@
   background: transparent;
 }
 .tempo-button--color-dark.tempo-button--standard {
-  color: var(--color-token-light-content-inverse);
-  background: var(--color-token-light-semantic-highlight);
-  border-color: transparent;
+  color: var(--color-token-dark-content-1);
+  border-color: var(--color-token-dark-semantic-highlight);
 }
 
 .tempo-button:focus-visible,
@@ -107,9 +106,8 @@
   border-color: var(--color-token-light-semantic-highlight-hover);
 }
 .tempo-button--color-dark.tempo-button--standard:hover {
-  cursor: pointer;
-  color: var(--color-token-light-content-inverse);
-  background: var(--color-token-light-semantic-highlight-hover);
+  color: var(--color-token-dark-content-hover);
+  border-color: var(--color-token-dark-semantic-highlight-hover);
 }
 
 .tempo-button--standard:active {
@@ -117,8 +115,8 @@
   border-color: var(--color-token-light-semantic-highlight-active);
 }
 .tempo-button--color-dark.tempo-button--standard:active {
-  color: var(--color-token-light-content-inverse);
-  background: var(--color-token-light-semantic-highlight-active);
+  color: var(--color-token-dark-content-active);
+  border-color: var(--color-token-dark-semantic-highlight-active);
 }
 
 .tempo-button--standard:disabled {
@@ -127,9 +125,8 @@
   border-color: var(--color-token-light-border-3);
 }
 .tempo-button--color-dark.tempo-button--standard:disabled {
-  cursor: default;
-  color: var(--color-token-light-content-disabled);
-  background: var(--color-token-light-background-disabled);
+  color: var(--color-token-dark-content-disabled);
+  border-color: var(--color-token-dark-border-3);
 }
 
 .tempo-button--standard.tempo-button--loading {
@@ -138,10 +135,8 @@
   border-color: var(--color-token-light-border-3);
 }
 .tempo-button--color-dark.tempo-button--standard.tempo-button--loading {
-  cursor: default;
-  color: var(--color-token-light-content-disabled);
-  background: var(--color-token-light-background-disabled);
-  border-color: var(--color-token-light-border-3);
+  color: var(--color-token-dark-content-disabled);
+  border-color: var(--color-token-dark-border-3);
 }
 
 .tempo-button--primary {
@@ -152,7 +147,6 @@
 .tempo-button--color-dark.tempo-button--primary {
   color: var(--color-token-dark-content-inverse);
   background: var(--color-token-dark-semantic-highlight);
-  border-color: var(--color-token-light-semantic-highlight-hover);
 }
 
 .tempo-button--primary:hover {
@@ -163,7 +157,6 @@
 .tempo-button--color-dark.tempo-button--primary:hover {
   color: var(--color-token-dark-content-inverse);
   background: var(--color-token-dark-semantic-highlight-hover);
-  border-color: var(--color-token-light-semantic-highlight-hover);
 }
 
 .tempo-button--primary:active {

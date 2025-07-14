@@ -41,29 +41,40 @@ export const Horizontal: Story = {
   args: {
     kind: DIVIDER_HORIZONTAL,
   },
+  decorators: [(Story) => React.createElement("div", { style: { width: "400px" } }, React.createElement(Story))],
 };
 
 export const Vertical: Story = {
   args: {
     kind: DIVIDER_VERTICAL,
   },
-  decorators: [(Story) => React.createElement("div", { style: { height: "50px" } }, React.createElement(Story))],
+  decorators: [(Story) => React.createElement("div", { style: { height: "200px" } }, React.createElement(Story))],
 };
 
 export const Dark: Story = {
   args: {
     color: DIVIDER_DARK,
   },
+  decorators: [
+    (Story) =>
+      React.createElement(
+        "div",
+        { style: { width: "400px", backgroundColor: "black", padding: "10px" } },
+        React.createElement(Story),
+      ),
+  ],
 };
 
 export const MediumContrast: Story = {
   args: {
     contrast: DIVIDER_CONTRAST_MEDIUM,
   },
+  decorators: [(Story) => React.createElement("div", { style: { width: "400px" } }, React.createElement(Story))],
 };
 
 export const LowContrast: Story = {
   args: {
     contrast: DIVIDER_CONTRAST_LOW,
   },
+  decorators: [(Story) => React.createElement("div", { style: { width: "400px" } }, React.createElement(Story))],
 };

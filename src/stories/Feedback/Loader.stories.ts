@@ -1,3 +1,4 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Loader } from "@/components";
 import {
@@ -86,6 +87,9 @@ export const Bar: Story = {
     kind: LOADER_BAR,
     color: LOADER_LIGHT,
   },
+  decorators: [
+    (Story) => React.createElement("div", { style: { width: "400px", padding: "10px" } }, React.createElement(Story)),
+  ],
 };
 
 export const BarDark: Story = {
@@ -93,6 +97,14 @@ export const BarDark: Story = {
     kind: LOADER_BAR,
     color: LOADER_DARK,
   },
+  decorators: [
+    (Story) =>
+      React.createElement(
+        "div",
+        { style: { width: "400px", backgroundColor: "black", padding: "10px" } },
+        React.createElement(Story),
+      ),
+  ],
 };
 
 // Custom Class Name

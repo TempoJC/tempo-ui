@@ -1,3 +1,4 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 import { Button } from "@/components";
@@ -79,6 +80,9 @@ export const DarkColor: Story = {
     label: "Dark Button",
     color: "dark",
   },
+  decorators: [
+    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
+  ],
 };
 
 export const Disabled: Story = {
