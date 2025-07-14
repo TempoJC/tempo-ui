@@ -6,6 +6,14 @@ export * from "./Atoms/Icons/Icon";
 export * from "./Atoms/Divider";
 export * from "./ContentDisplay/Badge";
 export * from "./ContentDisplay/Avatar";
+export {
+  default as Card,
+  CardHeader,
+  CardHeaderImage,
+  CardHeaderContent,
+  CardContentImage,
+  CardFooter,
+} from "./ContentDisplay/Card";
 export * from "./Feedback/Loader";
 export * from "./Input/AlternativeField";
 // Agrega más exports a medida que crees más componentes
