@@ -21,9 +21,11 @@ function App() {
     <div>
       <h1>¡Tu Librería de Componentes!</h1>
       <Icon group="actions" name="add" onClick={() => console.log("Icon clicked")} />
+      <Icon group="alerts" name="information-filled" onClick={() => console.log("Icon clicked")} />
       <Divider kind="horizontal" />
       <Loader size="small" />
       <Loader size="medium" />
+      <Loader kind="bar" color="dark" />
       <Loader size="large" />
       <Divider kind="horizontal" contrast="high" />
       <Badge text="1" variant="coconut" testId="badge-coconut" />
@@ -59,6 +61,14 @@ function App() {
         loading={false}
       />
       <Divider kind="horizontal" contrast="high" />
+      <Button label={"Default Button dark"} kind="standard" color="light" />
+      <Button label={"Default Button dark"} kind="primary" color="light" />
+      <Button label={"Default Button dark"} kind="danger" color="light" />
+      <Divider kind="horizontal" contrast="high" />
+      <Button label={"Default Button dark"} kind="standard" color="dark" />
+      <Button label={"Default Button dark"} kind="primary" color="dark" />
+      <Button label={"Default Button dark"} kind="danger" color="dark" />
+
       <Button
         label={"Botón"}
         onClick={() => {
