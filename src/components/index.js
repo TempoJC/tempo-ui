@@ -1,7 +1,7 @@
 export * from "./Atoms/Buttons/Button";
-export { default as ActionButton } from "./Atoms/Buttons/ActionButton"; // JS
-export { default as SwitchButton } from "./Atoms/Buttons/SwitchButton"; // JS
-export { default as Checkbox } from "./Atoms/Checkbox"; //
+export { default as ActionButton } from "./Atoms/Buttons/ActionButton";
+export { default as SwitchButton } from "./Atoms/Buttons/SwitchButton";
+export { default as Checkbox } from "./Atoms/Checkbox";
 export * from "./Atoms/Icons/Icon";
 export * from "./Atoms/Divider";
 export * from "./ContentDisplay/Badge";
