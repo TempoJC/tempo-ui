@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast high and color dark 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--dark tempo-divider--horizontal tempo-divider--high"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast high and color light 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--high"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast low and color dark 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--dark tempo-divider--horizontal tempo-divider--low"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast low and color light 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--low"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast medium and color dark 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--dark tempo-divider--horizontal tempo-divider--medium"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider contrast & color is contrast medium and color light 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--medium"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider kind is horizontal 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--high"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider kind is vertical 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--vertical tempo-divider--high"
+  />
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/Atoms/Divider renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--high"
+  />
+</DocumentFragment>
+`;

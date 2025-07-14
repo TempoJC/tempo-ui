@@ -1,20 +1,24 @@
-import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge, Avatar } from "./components";
+import { Icon, Loader, Button, Checkbox, ActionButton, SwitchButton, Badge, Avatar, Divider } from "./components";
 
 function App() {
   return (
     <div>
       <h1>¡Tu Librería de Componentes!</h1>
       <Icon group="actions" name="add" onClick={() => console.log("Icon clicked")} />
+      <Divider kind="horizontal" />
       <Loader size="small" />
       <Loader size="medium" />
       <Loader size="large" />
+      <Divider kind="horizontal" contrast="high" />
       <Badge text="1" variant="coconut" testId="badge-coconut" />
       <Badge text="2" variant="blackberry" testId="badge-blackberry" />
       <Badge text="3" variant="cherry" testId="badge-cherry" />
       <Badge text="4" variant="apricot" testId="badge-apricot" />
+      <Divider kind="horizontal" contrast="low" />
       <Avatar initials="JG" imageUrl="http://some.avatar/url" color="light" shape="circle" />
       <Avatar initials="JG" imageUrl="http://some.avatar/url" color="dark" shape="circle" size="medium" />
       <Avatar initials="JG" imageUrl="http://some.avatar/url" color="dark" size="medium" />
+      <Divider kind="horizontal" contrast="medium" />
       <SwitchButton
         icon={<>Switch</>}
         selected={true}
@@ -29,6 +33,7 @@ function App() {
         autoFocus={false}
         tabIndex={0}
       />
+
       <ActionButton
         label="Acción"
         onClick={() => console.log("¡Acción ejecutada!")}
