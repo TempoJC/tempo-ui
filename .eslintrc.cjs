@@ -11,12 +11,13 @@ module.exports = {
   // Define las configuraciones extendidas
   // El orden es importante: las últimas sobrescriben a las anteriores
   extends: [
-    "eslint:recommended", // Reglas recomendadas por ESLint
-    "plugin:react/recommended", // Reglas recomendadas para React
-    "plugin:react-hooks/recommended", // Reglas para React Hooks
-    "plugin:@typescript-eslint/recommended", // Reglas recomendadas para TypeScript
-    "plugin:@typescript-eslint/recommended-requiring-type-checking", // Reglas de TypeScript que requieren información de tipo
-    "plugin:prettier/recommended", // Deshabilita reglas de ESLint que entran en conflicto con Prettier y añade la regla de Prettier
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
   ],
   // Parser que ESLint usará para analizar tu código
   parser: "@typescript-eslint/parser",

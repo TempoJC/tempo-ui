@@ -38,3 +38,5 @@ yarn-debug.log
 
 # VSCode
 .vscode/
+*storybook.log
+storybook-static
