@@ -2,7 +2,7 @@ import { SwitchButton } from "@/components";
 import { fn } from "storybook/test";
 
 const meta = {
-  title: "Example/Atoms/Buttons/SwitchButton",
+  title: "Atoms/Buttons/SwitchButton",
   component: SwitchButton,
   parameters: {
     layout: "centered",

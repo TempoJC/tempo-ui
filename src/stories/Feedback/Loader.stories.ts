@@ -12,7 +12,7 @@ import {
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Example/Feedback/Loader", // Organized under a 'Feedback' category
+  title: "Feedback/Loader", // Organized under a 'Feedback' category
   component: Loader,
   parameters: {
     layout: "centered", // Center the component in the Canvas
