@@ -1,26 +1,30 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    cssInjectedByJsPlugin(),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: false,
+    }),
+  ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "TempoUI",
       fileName: (format) => `tempo-ui.${format}.js`,
-      formats: ["es", "cjs"],
     },
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
-        inlineDynamicImports: false,
-
-        manualChunks(id) {
-          if (id.includes("/src/components/")) {
-            const componentName = id.split("/src/components/")[1].split("/")[0];
-            return `components/${componentName}`;
-          }
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
         },
       },
     },
