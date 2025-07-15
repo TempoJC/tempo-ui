@@ -19,4 +19,5 @@ export type SwitchButtonProps = CommonProps & {
 
 declare function SwitchButton(props: SwitchButtonProps): JSX.Element;
 
+export type { SwitchButtonProps };
 export default SwitchButton;

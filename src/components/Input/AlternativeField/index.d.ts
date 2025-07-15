@@ -38,4 +38,5 @@ export type AlternativeFieldProps<Value, Input = unknown> = CommonProps &
 
 declare function AlternativeField<Value>(props: AlternativeFieldProps<Value>): JSX.Element;
 
+export type { AlternativeFieldFuncProps, AlternativeFieldCommonProps, AlternativeFieldProps };
 export default AlternativeField;
