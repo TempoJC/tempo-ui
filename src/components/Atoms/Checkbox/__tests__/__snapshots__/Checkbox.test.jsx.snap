@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/Conteng/Checkbox renders 1`] = `
+<DocumentFragment>
+  <label
+    class="tempo-checkbox"
+  >
+    <input
+      class="tempo-checkbox__input"
+      type="checkbox"
+    />
+    <span
+      class="tempo-checkbox__icon"
+    />
+  </label>
+</DocumentFragment>
+`;

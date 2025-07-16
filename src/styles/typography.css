@@ -1,0 +1,185 @@
+:root,
+:host {
+  --tempo-proportional-font-stack: NeueHelveticaCustom, Arial, sans-serif;
+  --tempo-monospace-font-stack: NotoSansMono, monospace;
+
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-wider: 0.08em;
+
+  --typography-size-1: 10px;
+  --typography-size-2: 12px;
+  --typography-size-3: 14px;
+  --typography-size-4: 16px;
+  --typography-size-5: 18px;
+  --typography-size-6: 20px;
+  --typography-size-7: 24px;
+  --typography-size-8: 28px;
+  --typography-size-9: 32px;
+  --typography-size-10: 36px;
+  --typography-size-11: 40px;
+  --typography-size-12: 48px;
+  --typography-size-13: 56px;
+  --typography-size-14: 64px;
+  --typography-size-15: 72px;
+  --typography-size-16: 80px;
+  --typography-size-17: 96px;
+  --typography-size-18: 112px;
+  --typography-size-19: 128px;
+  --typography-size-20: 144px;
+
+  /* WARNING: detail-s is a deprecated font, use detail-m-light instead */
+  --typography-detail-s-weight: 300;
+  --typography-detail-s-size: var(--typography-size-1);
+  --typography-detail-s-line-height: 14px;
+  --typography-detail-s-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-detail-s-font: var(--typography-detail-s-weight) var(--typography-detail-s-size) /
+    var(--typography-detail-s-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-detail-m-light-weight: 300;
+  --typography-detail-m-light-size: var(--typography-size-2);
+  --typography-detail-m-light-line-height: 16px;
+  --typography-detail-m-light-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-detail-m-light-font: var(--typography-detail-m-light-weight) var(--typography-detail-m-light-size) /
+    var(--typography-detail-m-light-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-detail-m-regular-weight: 400;
+  --typography-detail-m-regular-size: var(--typography-size-2);
+  --typography-detail-m-regular-line-height: 16px;
+  --typography-detail-m-regular-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-detail-m-regular-font: var(--typography-detail-m-regular-weight)
+    var(--typography-detail-m-regular-size) / var(--typography-detail-m-regular-line-height)
+    var(--tempo-proportional-font-stack);
+
+  --typography-body-m-light-weight: 300;
+  --typography-body-m-light-size: var(--typography-size-3);
+  --typography-body-m-light-line-height: 20px;
+  --typography-body-m-light-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-body-m-light-font: var(--typography-body-m-light-weight) var(--typography-body-m-light-size) /
+    var(--typography-body-m-light-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-body-m-regular-weight: 400;
+  --typography-body-m-regular-size: var(--typography-size-3);
+  --typography-body-m-regular-line-height: 20px;
+  --typography-body-m-regular-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-body-m-regular-font: var(--typography-body-m-regular-weight) var(--typography-body-m-regular-size) /
+    var(--typography-body-m-regular-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-body-l-light-weight: 300;
+  --typography-body-l-light-size: var(--typography-size-4);
+  --typography-body-l-light-line-height: 22px;
+  --typography-body-l-light-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-body-l-light-font: var(--typography-body-l-light-weight) var(--typography-body-l-light-size) /
+    var(--typography-body-l-light-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-body-l-regular-weight: 400;
+  --typography-body-l-regular-size: var(--typography-size-4);
+  --typography-body-l-regular-line-height: 22px;
+  --typography-body-l-regular-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-body-l-regular-font: var(--typography-body-l-regular-weight) var(--typography-body-l-regular-size) /
+    var(--typography-body-l-regular-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-code-m-weight: 300;
+  --typography-code-m-size: var(--typography-size-3);
+  --typography-code-m-line-height: 20px;
+  --typography-code-m-letter-spacing: var(--letter-spacing-wide);
+
+  --typography-code-m-font: var(--typography-code-m-weight) var(--typography-code-m-size) /
+    var(--typography-code-m-line-height) var(--tempo-monospace-font-stack);
+
+  --typography-label-m-regular-weight: 300;
+  --typography-label-m-regular-size: 11px;
+  --typography-label-m-regular-line-height: 16px;
+  --typography-label-m-regular-letter-spacing: var(--letter-spacing-wider);
+  --typography-label-m-regular-text-transform: uppercase;
+
+  --typography-label-m-regular-font: var(--typography-label-m-regular-weight) var(--typography-label-m-regular-size) /
+    var(--typography-label-m-regular-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-label-m-medium-weight: 500;
+  --typography-label-m-medium-size: 11px;
+  --typography-label-m-medium-line-height: 16px;
+  --typography-label-m-medium-letter-spacing: var(--letter-spacing-wider);
+  --typography-label-m-medium-text-transform: uppercase;
+
+  --typography-label-m-medium-font: var(--typography-label-m-medium-weight) var(--typography-label-m-medium-size) /
+    var(--typography-label-m-medium-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-label-l-regular-weight: 300;
+  --typography-label-l-regular-size: 13px;
+  --typography-label-l-regular-line-height: 18px;
+  --typography-label-l-regular-letter-spacing: var(--letter-spacing-wider);
+  --typography-label-l-regular-text-transform: uppercase;
+
+  --typography-label-l-regular-font: var(--typography-label-l-regular-weight) var(--typography-label-l-regular-size) /
+    var(--typography-label-l-regular-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-label-l-medium-weight: 500;
+  --typography-label-l-medium-size: 13px;
+  --typography-label-l-medium-line-height: 18px;
+  --typography-label-l-medium-letter-spacing: var(--letter-spacing-wider);
+  --typography-label-l-medium-text-transform: uppercase;
+
+  --typography-label-l-medium-font: var(--typography-label-l-medium-weight) var(--typography-label-l-medium-size) /
+    var(--typography-label-l-medium-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-xs-weight: 300;
+  --typography-title-xs-size: var(--typography-size-4);
+  --typography-title-xs-line-height: 20px;
+  --typography-title-xs-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-xs-text-transform: uppercase;
+
+  --typography-title-xs-font: var(--typography-title-xs-weight) var(--typography-title-xs-size) /
+    var(--typography-title-xs-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-s-weight: 300;
+  --typography-title-s-size: var(--typography-size-6);
+  --typography-title-s-line-height: 28px;
+  --typography-title-s-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-s-text-transform: uppercase;
+
+  --typography-title-s-font: var(--typography-title-s-weight) var(--typography-title-s-size) /
+    var(--typography-title-s-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-m-weight: 300;
+  --typography-title-m-size: var(--typography-size-7);
+  --typography-title-m-line-height: 32px;
+  --typography-title-m-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-m-text-transform: uppercase;
+
+  --typography-title-m-font: var(--typography-title-m-weight) var(--typography-title-m-size) /
+    var(--typography-title-m-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-l-weight: 300;
+  --typography-title-l-size: var(--typography-size-9);
+  --typography-title-l-line-height: 40px;
+  --typography-title-l-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-l-text-transform: uppercase;
+
+  --typography-title-l-font: var(--typography-title-l-weight) var(--typography-title-l-size) /
+    var(--typography-title-l-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-xl-weight: 300;
+  --typography-title-xl-size: var(--typography-size-12);
+  --typography-title-xl-line-height: 56px;
+  --typography-title-xl-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-xl-text-transform: uppercase;
+
+  --typography-title-xl-font: var(--typography-title-xl-weight) var(--typography-title-xl-size) /
+    var(--typography-title-xl-line-height) var(--tempo-proportional-font-stack);
+
+  --typography-title-2xl-weight: 300;
+  --typography-title-2xl-size: var(--typography-size-14);
+  --typography-title-2xl-line-height: 72px;
+  --typography-title-2xl-letter-spacing: var(--letter-spacing-wide);
+  --typography-title-2xl-text-transform: uppercase;
+
+  --typography-title-2xl-font: var(--typography-title-2xl-weight) var(--typography-title-2xl-size) /
+    var(--typography-title-2xl-line-height) var(--tempo-proportional-font-stack);
+}

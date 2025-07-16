@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/Atoms/Buttons/SwitchButton renders 1`] = `
+<DocumentFragment>
+  <button
+    class="tempo-switch-button"
+  >
+    <div
+      data-icon-state="enabled"
+      data-icon-type="unselected"
+    />
+  </button>
+</DocumentFragment>
+`;

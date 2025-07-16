@@ -1,0 +1,245 @@
+.tempo-checkbox {
+  --checkbox-svg-check-light: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2711%27 height=%278%27 xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%23fff%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M10.67 1.362 4.047 7.674 0 4.204l.651-.76 3.36 2.882L9.982.638l.69.724Z%27/%3E%3C/svg%3E");
+  --checkbox-svg-rect-light: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%278%27 height=%272%27 xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%23fff%27%3E%3Cpath d=%27M0 .5h8v1H0z%27/%3E%3C/svg%3E");
+  --checkbox-svg-check-dark: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2711%27 height=%278%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M10.67 1.362 4.047 7.674 0 4.204l.651-.76 3.36 2.882L9.982.638l.69.724Z%27/%3E%3C/svg%3E");
+  --checkbox-svg-rect-dark: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%278%27 height=%272%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M0 .5h8v1H0z%27/%3E%3C/svg%3E");
+
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  /* create a context for the input layer */
+  isolation: isolate;
+}
+
+.tempo-checkbox__input {
+  opacity: 0;
+  position: absolute;
+
+  /*
+   * Must render above the rest to make sure it handles
+   * the click event. Otherwise, weird bugs happen (see #1073)
+   */
+  z-index: 1;
+
+  cursor: pointer;
+  width: var(--size4);
+  height: var(--size4);
+  left: 2px;
+  top: 2px;
+}
+
+.tempo-checkbox__icon {
+  box-sizing: border-box;
+  background: transparent;
+  display: block;
+  width: var(--size5);
+  height: var(--size5);
+  flex-shrink: 0;
+  position: relative;
+  padding: 2px;
+}
+
+.tempo-checkbox__icon:before {
+  transition: background-color ease 300ms;
+  display: block;
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: var(--color-token-light-background-1);
+  border: 1px solid var(--color-token-light-border-1);
+}
+
+.tempo-checkbox__icon:after {
+  display: block;
+  content: "";
+  box-sizing: border-box;
+  width: var(--size4);
+  height: var(--size4);
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+.tempo-checkbox--indeterminate {
+  & .tempo-checkbox__icon:after {
+    background: no-repeat center var(--checkbox-svg-rect-light);
+  }
+}
+
+.tempo-checkbox--checked {
+  & .tempo-checkbox__icon:after {
+    background: no-repeat center var(--checkbox-svg-check-light);
+  }
+}
+
+.tempo-checkbox--indeterminate,
+.tempo-checkbox--checked {
+  & .tempo-checkbox__icon:before {
+    background: var(--color-token-light-semantic-highlight);
+    border-color: var(--color-token-light-semantic-highlight);
+  }
+}
+
+.tempo-checkbox__input:focus + .tempo-checkbox__icon:before {
+  border: 1px solid var(--color-token-light-semantic-highlight-2);
+}
+
+.tempo-checkbox__input:focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  border: 1px solid var(--color-token-light-border-1);
+}
+
+.tempo-checkbox--indeterminate :focus + .tempo-checkbox__icon:before,
+.tempo-checkbox--checked :focus + .tempo-checkbox__icon:before {
+  background: var(--color-token-light-semantic-highlight-2);
+  border-color: var(--color-token-light-semantic-highlight-2);
+}
+
+.tempo-checkbox--indeterminate :focus:not(:focus-visible) + .tempo-checkbox__icon:before,
+.tempo-checkbox--checked :focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  background: var(--color-token-light-semantic-highlight);
+  border-color: var(--color-token-light-semantic-highlight);
+}
+
+.tempo-checkbox--disabled.tempo-checkbox--indeterminate :focus:not(:focus-visible) + .tempo-checkbox__icon:before,
+.tempo-checkbox--read-only.tempo-checkbox--checked :focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  background: var(--color-token-light-semantic-highlight);
+  border-color: var(--color-token-light-semantic-highlight);
+}
+
+.tempo-checkbox--read-only {
+  cursor: default;
+  pointer-events: none;
+}
+
+.tempo-checkbox--disabled,
+.tempo-checkbox--read-only {
+  cursor: default;
+  & .tempo-checkbox__icon:before {
+    background: var(--color-token-light-background-disabled);
+    border-color: var(--color-token-light-border-3);
+  }
+  &.tempo-checkbox--indeterminate,
+  &.tempo-checkbox--checked {
+    & .tempo-checkbox__icon:before {
+      background: var(--color-token-light-background-3);
+      border-color: var(--color-token-light-background-3);
+    }
+  }
+}
+
+.tempo-checkbox--disabled.tempo-checkbox--indeterminate :focus:not(:focus-visible) + .tempo-checkbox__icon:before,
+.tempo-checkbox--disabled.tempo-checkbox--checked :focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  background: var(--color-token-light-background-3);
+  border-color: var(--color-token-light-background-3);
+}
+
+.tempo-checkbox--disabled {
+  & .tempo-checkbox__label {
+    color: var(--color-token-light-content-disabled);
+  }
+}
+
+.tempo-checkbox__label {
+  box-sizing: border-box;
+  margin-left: var(--size2);
+  font: var(--typography-body-m-light-font);
+  letter-spacing: var(--typography-body-m-light-letter-spacing);
+  color: var(--color-token-light-content-1);
+}
+
+@media (--viewport-xs-m) {
+  .tempo-checkbox__label {
+    font: var(--typography-body-l-light-font);
+    letter-spacing: var(--typography-body-l-light-letter-spacing);
+  }
+}
+
+/** Dark **/
+.tempo-checkbox--color-dark {
+  & .tempo-checkbox__icon:before {
+    background: var(--color-token-dark-background-1);
+    border: 1px solid var(--color-token-dark-border-1);
+  }
+
+  &.tempo-checkbox--indeterminate,
+  &.tempo-checkbox--checked {
+    & .tempo-checkbox__icon:before {
+      background: var(--color-token-dark-semantic-highlight);
+      border-color: var(--color-token-dark-semantic-highlight);
+    }
+  }
+
+  &.tempo-checkbox--disabled,
+  &.tempo-checkbox--read-only {
+    & .tempo-checkbox__icon:before {
+      background: var(--color-token-dark-background-disabled);
+      border-color: var(--color-token-dark-border-3);
+    }
+    &.tempo-checkbox--indeterminate,
+    &.tempo-checkbox--checked {
+      & .tempo-checkbox__icon:before {
+        background: var(--color-token-dark-background-3);
+        border-color: var(--color-token-dark-background-3);
+      }
+    }
+  }
+
+  &.tempo-checkbox--disabled {
+    & .tempo-checkbox__label {
+      color: var(--color-token-dark-content-disabled);
+    }
+  }
+
+  &.tempo-checkbox--indeterminate {
+    & .tempo-checkbox__icon:after {
+      background: no-repeat center var(--checkbox-svg-rect-dark);
+    }
+  }
+  &.tempo-checkbox--checked {
+    & .tempo-checkbox__icon:after {
+      background: no-repeat center var(--checkbox-svg-check-dark);
+    }
+  }
+  & .tempo-checkbox__label {
+    color: var(--color-token-dark-content-1);
+  }
+}
+
+.tempo-checkbox--color-dark .tempo-checkbox__input:focus + .tempo-checkbox__icon:before {
+  border: 1px solid var(--color-token-dark-semantic-highlight-2);
+}
+
+.tempo-checkbox--color-dark .tempo-checkbox__input:focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  border: 1px solid var(--color-token-dark-border-1);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--checked :focus + .tempo-checkbox__icon:after {
+  background: no-repeat center var(--checkbox-svg-check-light);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--checked :focus:not(:focus-visible) + .tempo-checkbox__icon:after {
+  background: no-repeat center var(--checkbox-svg-check-dark);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--indeterminate :focus + .tempo-checkbox__icon:after {
+  background: no-repeat center var(--checkbox-svg-rect-light);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--indeterminate :focus:not(:focus-visible) + .tempo-checkbox__icon:after {
+  background: no-repeat center var(--checkbox-svg-rect-dark);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--indeterminate :focus + .tempo-checkbox__icon:before,
+.tempo-checkbox--color-dark.tempo-checkbox--checked :focus + .tempo-checkbox__icon:before {
+  background: var(--color-token-dark-semantic-highlight-2);
+  border-color: var(--color-token-dark-semantic-highlight-2);
+}
+
+.tempo-checkbox--color-dark.tempo-checkbox--indeterminate :focus:not(:focus-visible) + .tempo-checkbox__icon:before,
+.tempo-checkbox--color-dark.tempo-checkbox--checked :focus:not(:focus-visible) + .tempo-checkbox__icon:before {
+  background: var(--color-token-dark-semantic-highlight);
+  border-color: var(--color-token-dark-semantic-highlight);
+}

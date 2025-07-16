@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`useSyncedRef works with function refs 1`] = `
+<div>
+  the node
+</div>
+`;
+
+exports[`useSyncedRef works with object refs 1`] = `
+<div>
+  the node
+</div>
+`;

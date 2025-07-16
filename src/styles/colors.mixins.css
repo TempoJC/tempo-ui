@@ -1,0 +1,31 @@
+@define-mixin themed-tokens $theme {
+  --color-token-content-1: var(--color-token-$(theme)-content-1);
+  --color-token-content-2: var(--color-token-$(theme)-content-2);
+  --color-token-content-3: var(--color-token-$(theme)-content-3);
+  --color-token-content-inverse: var(--color-token-$(theme)-content-inverse);
+  --color-token-content-hover: var(--color-token-$(theme)-content-hover);
+  --color-token-content-active: var(--color-token-$(theme)-content-active);
+  --color-token-content-disabled: var(--color-token-$(theme)-content-disabled);
+  --color-token-background-1: var(--color-token-$(theme)-background-1);
+  --color-token-background-2: var(--color-token-$(theme)-background-2);
+  --color-token-background-3: var(--color-token-$(theme)-background-3);
+  --color-token-background-inverse: var(--color-token-$(theme)-background-inverse);
+  --color-token-background-hover: var(--color-token-$(theme)-background-hover);
+  --color-token-background-active: var(--color-token-$(theme)-background-active);
+  --color-token-background-disabled: var(--color-token-$(theme)-background-disabled);
+  --color-token-border-1: var(--color-token-$(theme)-border-1);
+  --color-token-border-2: var(--color-token-$(theme)-border-2);
+  --color-token-border-3: var(--color-token-$(theme)-border-3);
+  --color-token-border-inverse: var(--color-token-$(theme)-border-inverse);
+  --color-token-semantic-highlight: var(--color-token-$(theme)-semantic-highlight);
+  --color-token-semantic-highlight-2: var(--color-token-$(theme)-semantic-highlight-2);
+  --color-token-semantic-danger: var(--color-token-$(theme)-semantic-danger);
+  --color-token-semantic-warning: var(--color-token-$(theme)-semantic-warning);
+  --color-token-semantic-success: var(--color-token-$(theme)-semantic-success);
+  --color-token-semantic-highlight-hover: var(--color-token-$(theme)-semantic-highlight-hover);
+  --color-token-semantic-highlight-active: var(--color-token-$(theme)-semantic-highlight-active);
+  --color-token-semantic-danger-hover: var(--color-token-$(theme)-semantic-danger-hover);
+  --color-token-semantic-danger-active: var(--color-token-$(theme)-semantic-danger-active);
+  --color-token-background-inverse-overlay: var(--color-token-$(theme)-background-inverse-overlay);
+  --color-token-content-inverse-overlay: var(--color-token-$(theme)-content-inverse-overlay);
+}

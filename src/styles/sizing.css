@@ -1,0 +1,18 @@
+:root,
+:host {
+  --size1: 4px;
+  --size2: 8px;
+  --size3: 12px;
+  --size4: 16px;
+  --size5: 20px;
+  --size6: 24px;
+  --size7: 32px;
+  --size8: 40px;
+  --size9: 48px;
+  --size10: 56px;
+  --size11: 64px;
+  --size12: 80px;
+  --size13: 96px;
+  --size14: 112px;
+  --size15: 128px;
+}

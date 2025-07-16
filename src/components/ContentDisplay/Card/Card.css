@@ -1,0 +1,46 @@
+.tempo-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tempo-card-wrapper > * + * {
+  margin-top: var(--size3);
+}
+
+.tempo-card-wrapper--outlined {
+  border: 0.5px solid var(--color-token-light-border-1);
+}
+
+.tempo-card-wrapper--outlined.tempo-card-wrapper--dark {
+  border: 0.5px solid var(--color-token-dark-border-1);
+}
+
+.tempo-card-header {
+  display: flex;
+}
+
+.tempo-card-header > * + * {
+  margin-left: var(--size3);
+}
+
+.tempo-card-header-image {
+  position: relative;
+
+  & img {
+    display: block;
+  }
+}
+
+.tempo-card-header-content {
+  width: 100%;
+  height: fit-content;
+}
+
+.tempo-card-content-image {
+  position: relative;
+
+  & img {
+    width: 100%;
+    display: block;
+  }
+}

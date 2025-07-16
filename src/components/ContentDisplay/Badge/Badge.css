@@ -1,0 +1,107 @@
+.tempo-badge {
+  width: var(--size4);
+  height: var(--size4);
+  padding: 0;
+}
+
+.tempo-badge--small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tempo-badge__item {
+  background: var(--color-token-light-background-inverse);
+  font: var(--typography-detail-m-light-font);
+  letter-spacing: var(--typography-detail-m-light-letter-spacing);
+  text-transform: uppercase;
+  color: var(--color-token-light-content-inverse);
+  width: var(--size4);
+  height: var(--size4);
+  line-height: var(--size4);
+  border-radius: 100px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tempo-badge--small .tempo-badge__item {
+  width: var(--size2);
+  height: var(--size2);
+  padding: var(--size1);
+  font-size: 0;
+}
+
+.tempo-badge--color-dark .tempo-badge__item {
+  background: var(--color-token-dark-background-inverse);
+  color: var(--color-token-dark-content-inverse);
+}
+
+.tempo-badge--autolayout {
+  display: flex;
+  padding: 0;
+  height: var(--size4);
+  width: fit-content;
+}
+
+.tempo-badge--small.tempo-badge--autolayout {
+  justify-content: center;
+  align-items: center;
+  width: var(--size4);
+}
+
+.tempo-badge--autolayout .tempo-badge__item {
+  display: flex;
+  padding: 0 calc(var(--size1) + 1px);
+  min-width: var(--size4);
+  height: var(--size4);
+  width: fit-content;
+}
+
+.tempo-badge--small.tempo-badge--autolayout .tempo-badge__item {
+  display: block;
+  min-width: 0;
+  width: var(--size2);
+  height: var(--size2);
+  padding: var(--size1);
+  font-size: 0;
+}
+
+/* Badge colors */
+.tempo-badge--color-coconut .tempo-badge__item {
+  background: var(--color-coconut300);
+}
+
+.tempo-badge--color-blackberry .tempo-badge__item {
+  background: var(--color-blackberry300);
+}
+
+.tempo-badge--color-cherry .tempo-badge__item {
+  background: var(--color-cherry300);
+}
+
+.tempo-badge--color-apricot .tempo-badge__item {
+  background: var(--color-apricot300);
+}
+
+.tempo-badge--color-kiwi .tempo-badge__item {
+  background: var(--color-kiwi300);
+}
+
+.tempo-badge--color-mint .tempo-badge__item {
+  background: var(--color-mint300);
+}
+
+.tempo-badge--color-water .tempo-badge__item {
+  background: var(--color-water300);
+}
+.tempo-badge--color-blueberry .tempo-badge__item {
+  background: var(--color-blueberry300);
+}
+
+.tempo-badge--color-grape .tempo-badge__item {
+  background: var(--color-grape300);
+}
+
+.tempo-badge--color-watermelon .tempo-badge__item {
+  background: var(--color-watermelon300);
+}

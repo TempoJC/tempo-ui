@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/ContentDisplay/Badge remove long text when kind is circular 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    >
+      2
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Badge renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    >
+      5
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Badge renders autolayout badge 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--autolayout tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    >
+      124
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Badge renders badge with dark color scheme 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--color-dark tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    >
+      4
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Badge renders circular badge 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    >
+      8
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Badge renders small badge 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-badge tempo-badge--small tempo-badge--color-cherry"
+  >
+    <div
+      class="tempo-badge__item"
+    />
+  </div>
+</DocumentFragment>
+`;

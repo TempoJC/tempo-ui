@@ -1,0 +1,9 @@
+<svg data-icon-name='mass-edit-filled' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 4C2 2.89543 2.89543 2 4 2C5.10457 2 6 2.89543 6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4Z" fill="black"/>
+<path d="M2 10C2 8.89543 2.89543 8 4 8C5.10457 8 6 8.89543 6 10C6 11.1046 5.10457 12 4 12C2.89543 12 2 11.1046 2 10Z" fill="black"/>
+<path d="M4 14C2.89543 14 2 14.8954 2 16C2 17.1046 2.89543 18 4 18C5.10457 18 6 17.1046 6 16C6 14.8954 5.10457 14 4 14Z" fill="black"/>
+<path d="M14 2H18V6H14V2Z" fill="black"/>
+<path d="M18 8H14V12H18V8Z" fill="black"/>
+<path d="M14 14H18V18H14V14Z" fill="black"/>
+<path d="M10.8815 7.67684L10.1185 8.32316L11.1152 9.49994H7V10.4999H11.1152L10.1185 11.6769L10.8815 12.3231L12.8492 9.99993L10.8815 7.67684Z" fill="black"/>
+</svg>

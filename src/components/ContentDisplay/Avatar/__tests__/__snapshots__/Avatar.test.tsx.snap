@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/ContentDisplay/Avatar renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar"
+  >
+    <div
+      class="tempo-avatar__image"
+      style="background-image: url("http://some.avatar/url");"
+      title="JG"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Avatar renders in dark theme 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar tempo-avatar--color-dark"
+  >
+    <div
+      class="tempo-avatar__initials"
+    >
+      JG
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Avatar size is large renders in large size with image 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar tempo-avatar--large tempo-avatar--color-dark"
+  >
+    <div
+      class="tempo-avatar__image"
+      style="background-image: url("http://some.avatar/url");"
+      title="JG"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Avatar size is large renders in large size with initials 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar tempo-avatar--large tempo-avatar--color-dark"
+  >
+    <div
+      class="tempo-avatar__initials"
+    >
+      JG
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Avatar size is medium renders in medium size with image 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar tempo-avatar--medium tempo-avatar--color-dark"
+  >
+    <div
+      class="tempo-avatar__image"
+      style="background-image: url("http://some.avatar/url");"
+      title="JG"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Avatar size is medium renders in medium size with initials 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-avatar tempo-avatar--medium tempo-avatar--color-dark"
+  >
+    <div
+      class="tempo-avatar__initials"
+    >
+      JG
+    </div>
+  </div>
+</DocumentFragment>
+`;

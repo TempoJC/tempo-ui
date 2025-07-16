@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/ContentDisplay/Card renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-card-wrapper customCardClass"
+  >
+    <div
+      class="tempo-card-header customHeaderClass"
+    >
+      <div
+        class="tempo-card-header-image customHeaderImageClass"
+      >
+        <img
+          src="https://picsum.photos/id/237/200/300"
+          style="width: 80px;"
+        />
+      </div>
+      <div
+        class="tempo-card-header-content customHeaderContentClass"
+      >
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <div
+      class="tempo-card-content-image customContentImageClass"
+    >
+      <img
+        src="https://picsum.photos/id/1084/536/354"
+      />
+    </div>
+    <div
+      class="tempo-card-footer customFooterClass"
+    >
+      Footer content
+    </div>
+    <div
+      class="tempo-divider tempo-divider--light tempo-divider--horizontal tempo-divider--low"
+    />
+  </div>
+</DocumentFragment>
+`;

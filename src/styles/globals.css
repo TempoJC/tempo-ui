@@ -1,0 +1,143 @@
+@import "@styles/fonts/fonts.css";
+
+@import "normalize.css";
+
+@import "./colors.css";
+@import "./sizing.css";
+@import "./layers.css";
+@import "./viewports.css";
+@import "./typography.css";
+
+:root,
+:host {
+  --border-radius: 0px;
+
+  /* Form vars */
+  --color-form-error-fg: var(--color-token-light-semantic-danger);
+  --color-form-disabled-fg: var(--color-token-light-content-disabled);
+  --color-form-disabled-bg: var(--color-token-light-background-disabled);
+  --color-form-readonly-fg: var(--color-token-light-content-1);
+  --color-form-readonly-bg: var(--color-token-light-background-1);
+  --color-form-placeholder-fg: var(--color-token-light-content-3);
+  --color-form-label-fg: var(--color-token-light-content-1);
+  --color-form-input-fg: var(--color-token-light-content-1);
+  --color-form-field-bg: var(--color-token-light-background-1);
+  --color-form-field-border: var(--color-token-light-border-1);
+  --form-focus-border: 1px solid var(--color-token-light-border-1);
+  --form-field-border: 1px solid var(--color-form-field-border);
+  --form-field-input-min-height: 48px;
+  --form-error-border: 1px solid var(--color-token-light-semantic-danger);
+  --form-disabled-border: 1px solid var(--color-token-light-border-3);
+  --form-readonly-border: 1px solid var(--color-token-light-border-1);
+
+  --form-date-time-input-width: 224px;
+  --form-date-time-input-height: 310px;
+  --form-time-input-height: 384px;
+
+  --footer-height: 48px;
+  --nav-sidebar-width: 256px;
+  --mobile-nav-sidebar-width: 325px;
+  --navbar-height: 64px;
+  --nav-sidebar-layer: var(--z4);
+  --header-height: calc(var(--navbar-height) + 2 * var(--p2));
+  --header-fullscreen-height: 0px;
+
+  --tempo-border-width: 1px;
+}
+
+@media (min-resolution: 192dpi) {
+  :root,
+  :host {
+    --tempo-border-width: 0.5px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: var(--typography-body-l-light-font);
+  color: var(--color-token-light-content-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--color-token-light-semantic-highlight);
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--color-token-light-border-1);
+  background-color: var(--color-token-light-background-1);
+  border-width: 0;
+  font: var(--typography-body-l-light-font);
+  margin-bottom: var(--size2);
+  max-width: 100%;
+  width: 100%;
+}
+
+th,
+td {
+  vertical-align: top;
+}
+
+thead th {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-token-light-semantic-highlight);
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+a:hover {
+  color: var(--color-token-light-semantic-highlight-hover);
+  cursor: pointer;
+}
+
+a:active {
+  color: var(--color-token-light-semantic-highlight-active);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+/* Revert some normalize.css styles */
+[type="button"]:focus-visible,
+[type="reset"]:focus-visible,
+[type="submit"]:focus-visible,
+button:focus-visible,
+:focus-visible {
+  outline: 0;
+}
+
+.tempo-viewport-fit-cover {
+  box-sizing: border-box;
+  padding: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}

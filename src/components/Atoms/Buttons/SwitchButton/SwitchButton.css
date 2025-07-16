@@ -1,0 +1,60 @@
+.tempo-switch-button {
+  padding: calc(var(--size1) - 2px);
+  color: var(--color-token-light-content-2);
+  width: fit-content;
+  background: none;
+  transition: background 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.tempo-switch-button:focus-visible {
+  border: 1px solid var(--color-token-light-semantic-highlight-2);
+}
+
+@media (--viewport-xs-m) {
+  .tempo-switch-button {
+    padding: calc(var(--size1) + 2px);
+  }
+}
+
+.tempo-switch-button--dark {
+  color: var(--color-token-dark-content-2);
+}
+
+.tempo-switch-button:hover {
+  color: var(--color-token-light-content-hover);
+}
+
+.tempo-switch-button--dark.tempo-switch-button:hover {
+  color: var(--color-token-dark-content-hover);
+}
+
+.tempo-switch-button--selected {
+  background-color: var(--color-token-light-background-active);
+}
+
+.tempo-switch-button--dark.tempo-switch-button--selected {
+  background-color: var(--color-token-dark-background-active);
+}
+
+.tempo-switch-button--disabled {
+  color: var(--color-token-light-content-disabled);
+  cursor: auto;
+  pointer-events: none;
+}
+
+.tempo-switch-button--dark.tempo-switch-button--disabled {
+  color: var(--color-token-dark-content-disabled);
+}
+
+.tempo-switch-button--selected.tempo-switch-button--disabled {
+  color: var(--color-token-light-content-disabled);
+  background-color: var(--color-token-light-background-disabled);
+}
+
+.tempo-switch-button--dark.tempo-switch-button--selected.tempo-switch-button--disabled {
+  color: var(--color-token-dark-content-disabled);
+  background-color: var(--color-token-dark-background-disabled);
+}
