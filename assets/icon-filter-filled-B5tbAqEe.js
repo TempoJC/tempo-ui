@@ -1,0 +1,5 @@
+const l=`<svg data-icon-name='filter-filled' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5.5C15.9319 5.5 16.715 6.13739 16.937 7H19V8H16.937C16.715 8.86261 15.9319 9.5 15 9.5C14.0681 9.5 13.285 8.86261 13.063 8H1V7H13.063C13.285 6.13739 14.0681 5.5 15 5.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.93699 12C6.71497 11.1374 5.93192 10.5 5 10.5C4.06808 10.5 3.28503 11.1374 3.06301 12H1V13H3.06301C3.28503 13.8626 4.06808 14.5 5 14.5C5.93192 14.5 6.71497 13.8626 6.93699 13H19V12H6.93699Z" fill="black"/>
+</svg>
+`;export{l as default};

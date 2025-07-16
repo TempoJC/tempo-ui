@@ -1,0 +1,5 @@
+const e=`<svg data-icon-name='subtract-square-outlined' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 10.5H6V9.5H14V10.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 3H3V17H17V3ZM2 2V18H18V2H2Z" fill="black"/>
+</svg>
+`;export{e as default};

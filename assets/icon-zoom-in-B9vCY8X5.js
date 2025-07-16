@@ -1,0 +1,6 @@
+const l=`<svg data-icon-name='zoom-in' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7H4V13H16V7ZM3 6V14H17V6H3Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.35 4.30691L11.6429 5L9.99645 3.38618L8.35 5L7.64289 4.30691L9.99645 2L12.35 4.30691Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.64282 15.6931L8.34993 15L9.99638 16.6138L11.6428 15L12.3499 15.6931L9.99638 18L7.64282 15.6931Z" fill="black"/>
+</svg>
+`;export{l as default};

@@ -1,0 +1,5 @@
+const L=`<svg data-icon-name='flip-outlined' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7929 6.00004L13.1465 4.35359L13.8536 3.64648L16.7071 6.50004L13.8536 9.35359L13.1465 8.64648L14.7929 7.00004H4.50001V9.50004H3.50001L3.50001 6.00004H14.7929Z" fill="black"/>
+<path d="M5.20712 14L6.85357 15.6465L6.14646 16.3536L3.29291 13.5L6.14646 10.6465L6.85357 11.3536L5.20712 13L15.5 13V10.5L16.5 10.5V14L5.20712 14Z" fill="black"/>
+</svg>
+`;export{L as default};

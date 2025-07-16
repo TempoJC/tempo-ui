@@ -1,0 +1,4 @@
+const e=`<svg data-icon-name='chevron-up' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.20707L6.85359 12.3535L6.14648 11.6464L10 7.79286L13.8536 11.6464L13.1465 12.3535L10 9.20707Z" fill="black"/>
+</svg>
+`;export{e as default};

@@ -1,0 +1,5 @@
+const l=`<svg data-icon-name='volume-filled' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 12.2857L14.5 18V2L7.5 7.71429V12.2857Z" fill="black"/>
+<path d="M5 8H6.5V12H5V8Z" fill="black"/>
+</svg>
+`;export{l as default};

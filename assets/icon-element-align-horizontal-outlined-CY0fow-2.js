@@ -1,0 +1,4 @@
+const l=`<svg data-icon-name='element-align-horizontal-outlined' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.49756V7L13 7V9.49756H18.0049V10.4976H13V13H7V10.4976H2V9.49756H7ZM8 8H12V12H8V8Z" fill="black"/>
+</svg>
+`;export{l as default};

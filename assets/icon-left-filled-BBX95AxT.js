@@ -1,0 +1,5 @@
+const l=`<svg data-icon-name='icon-left-filled' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 14C8.20914 14 10 12.2091 10 10C10 7.79086 8.20914 6 6 6C3.79086 6 2 7.79086 2 10C2 12.2091 3.79086 14 6 14ZM6 11C5.44772 11 5 10.5523 5 10H4C4 11.1046 4.89543 12 6 12C7.10457 12 8 11.1046 8 10H7C7 10.5523 6.55228 11 6 11Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 14H11L11.8571 12H16.1429L17 14H18L14.5 6H13.5L10 14ZM15.7143 11L14 7L12.2857 11H15.7143Z" fill="black"/>
+</svg>
+`;export{l as default};

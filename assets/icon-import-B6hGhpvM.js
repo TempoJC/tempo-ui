@@ -1,0 +1,5 @@
+const t=`<svg data-icon-name='import' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1566 8.98017L10.5964 11.6336L10.5964 2H9.40366L9.40366 11.6337L6.84341 8.98017L6 9.8543L10 14L14 9.8543L13.1566 8.98017Z" fill="black"/>
+<path d="M3 13.2994V17.3096H17V13.2994H18V18.3096H2V13.2994H3Z" fill="black"/>
+</svg>
+`;export{t as default};

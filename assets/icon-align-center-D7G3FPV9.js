@@ -1,0 +1,8 @@
+const l=`<svg data-icon-name='align-center' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2H2V3L18 3V2Z" fill="black"/>
+<path d="M18 9.5L2 9.5V10.5L18 10.5V9.5Z" fill="black"/>
+<path d="M2 17L18 17V18L2 18V17Z" fill="black"/>
+<path d="M14 13.25L6 13.25V14.25L14 14.25V13.25Z" fill="black"/>
+<path d="M6 5.75L14 5.75V6.75L6 6.75V5.75Z" fill="black"/>
+</svg>
+`;export{l as default};

@@ -1,0 +1,7 @@
+const n=`<svg data-icon-name='sort-ascending' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5 3.95726L17.1463 5.60359L17.8535 4.89648L14.9999 2.04297L12.1464 4.89648L12.8535 5.60359L14.5 3.95711V18H15.5V3.95726Z" fill="black"/>
+<path d="M9 5H2V4H9V5Z" fill="black"/>
+<path d="M2 10H11V9H2V10Z" fill="black"/>
+<path d="M2 15L13 15V14L2 14V15Z" fill="black"/>
+</svg>
+`;export{n as default};

@@ -1,0 +1,5 @@
+const l=`<svg data-icon-name='skip-backward-outlined' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 9.9282L9 16.8564L9 3L1.5 9.9282ZM8 5.28513L2.97373 9.9282L8 14.5713V5.28513Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9.9282L17 16.8564V3L9.5 9.9282ZM16 5.28513L10.9737 9.9282L16 14.5713V5.28513Z" fill="black"/>
+</svg>
+`;export{l as default};
