@@ -2,7 +2,7 @@
   "name": "tempo-ui",
   "private": false,
   "version": "0.0.1",
-  "description": "A personal React component library named temmpo-ui.",
+  "description": "A modern and lightweight React component library, built with Vite and focused on a clean design and great developer experience.",
   "main": "dist/tempo-ui.umd.js",
   "module": "dist/tempo-ui.es.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
       "import": "./dist/tempo-ui.es.js",
       "require": "./dist/tempo-ui.umd.js"
     },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
+    "./style.css": {
+      "import": "./dist/tempo-ui.css",
+      "require": "./dist/tempo-ui.css"
     }
   },
   "scripts": {
