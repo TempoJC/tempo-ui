@@ -1,9 +1,0 @@
-/* @import "./noto-sans-tc.css";
-@import "./noto-sans-sc.css";
-@import "./noto-sans-mono.css"; */
-/* TODO: Remove Urls and use locals */
-@import "https://amgassets.inditex.com/amigaweb/typography/noto-sans-tc/noto-sans-tc.css";
-@import "https://amgassets.inditex.com/amigaweb/typography/noto-sans-sc/noto-sans-sc.css";
-@import "https://amgassets.inditex.com/amigaweb/typography/noto-sans-mono/noto-sans-mono.css";
-
-@import "./neu-helvetica-custom.css";

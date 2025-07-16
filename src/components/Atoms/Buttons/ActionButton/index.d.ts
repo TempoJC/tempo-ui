@@ -30,4 +30,5 @@ export type ActionButtonProps = CommonProps & {
 
 declare function ActionButton(props: ActionButtonProps): JSX.Element;
 
+export type { ActionButtonProps };
 export default ActionButton;

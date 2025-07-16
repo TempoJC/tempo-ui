@@ -1,7 +1,6 @@
 import postcssImport from "postcss-import";
 import postcssMixins from "postcss-mixins";
 import postcssPresetEnv from "postcss-preset-env";
-import postcssUrl from "postcss-url";
 import postcssDiscardComments from "postcss-discard-comments";
 
 export default {
@@ -16,7 +15,6 @@ export default {
       },
       browsers: ["last 2 versions"],
     }),
-    postcssUrl(),
     postcssDiscardComments(),
   ],
 };

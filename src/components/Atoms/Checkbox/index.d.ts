@@ -22,4 +22,5 @@ export type CheckboxProps = CommonProps &
 
 declare function Checkbox(props: CheckboxProps): JSX.Element;
 
+export type { CheckboxProps };
 export default Checkbox;
