@@ -30,7 +30,8 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "keywords": [
     "react",
@@ -69,6 +70,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-storybook": "^9.0.16",
+    "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
@@ -86,5 +88,6 @@
     "typescript": "^5.8.3",
     "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4"
-  }
+  },
+  "homepage": "https://TempoJC.github.io/tempo-ui"
 }

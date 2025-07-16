@@ -10,7 +10,7 @@ Explore all the components in action in our Storybook.
 
 **🔗 View Storybook Demo**
 
-_(Replace the link with your deployed Storybook URL, for example on GitHub Pages or Netlify)._
+[DEMO LINK](https://TempoJC.github.io/tempo-ui)
 
 ## ✨ Features
 
