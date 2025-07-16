@@ -1,7 +1,7 @@
 {
   "name": "@jose88/tempo-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A modern and lightweight React component library, built with Vite and focused on a clean design and great developer experience.",
   "main": "dist/tempo-ui.umd.js",
   "module": "dist/tempo-ui.es.js",
