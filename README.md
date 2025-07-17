@@ -10,7 +10,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@jose88/tempo-ui)](https://bundlephobia.com/package/@jose88/tempo-ui)
 
-**tempo-ui** is a modern and lightweight React component library, built with Vite and focused on a clean design and a great developer experience. It's designed to be easily integrated into any React project, leveraging modern bundling optimizations like tree-shaking.
+**tempo-ui** is a modern and lightweight React component library, built with Vite and focused on a clean design and a great developer experience. It's designed to be easily integrated into any React project.
 
 ## 🚀 Live Demo (Storybook)
 
@@ -150,7 +150,7 @@ function MyAliasedAppComponent() {
 
 # 🤝 Contributing to Tempo UI
 
-We're thrilled you're interested in contributing to Tempo UI! This guide will help you set up your development environment, understand the project structure, and navigate the contribution process.
+We're thrilled you're interested in contributing to Tempo UI! This [guide](/CONTRIBUTING.md) will help you set up your development environment, understand the project structure, and navigate the contribution process.
 
 ## License
 
