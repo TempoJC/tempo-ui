@@ -74,12 +74,7 @@ It's easy to get started! There are two main steps to use Tempo UI components in
         <h1>Welcome to Tempo UI!</h1>
 
         {/* Example Primary Button */}
-        <Buttons.Primary
-          label={"Default Button dark"}
-          kind="standard"
-          color="dark"
-          onClick={() => alert("Button Clicked!")}
-        />
+        <Button label={"Default Button dark"} kind="standard" color="dark" onClick={() => alert("Button Clicked!")} />
 
         {/* Example Icon */}
         <Icon group="actions" name="add" onClick={() => console.log("Add Icon clicked")} />
