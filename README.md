@@ -36,8 +36,6 @@ To get started with `tempo-ui` in your project, install the scoped package via y
 npm install @jose88/tempo-ui
 # or
 yarn add @jose88/tempo-ui
-# or
-pnpm add @jose88/tempo-ui
 ```
 
 ## 💡 Usage
