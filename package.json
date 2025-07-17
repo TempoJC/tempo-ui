@@ -38,7 +38,11 @@
     "components",
     "ui-library"
   ],
-  "author": "TempoJC",
+  "author": {
+    "name": "Jose Luis Camargo Calizaya",
+    "email": "josel.cc.dam@gmail.com",
+    "url": "https://github.com/TempoJC"
+  },
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.5.1"
