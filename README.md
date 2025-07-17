@@ -1,6 +1,6 @@
 <div align="center">
   <a href="[https://github.com/TempoJC/tempo-ui](https://github.com/TempoJC/tempo-ui)" rel="noopener" target="_blank">
-    <img width="200" src="./src/assets/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
+    <img width="200" src="https://raw.githubusercontent.com/TempoJC/tempo-ui/refs/heads/master/src/assets/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
   </a>
   <h1>Tempo UI</h1>
 </div>
@@ -67,13 +67,13 @@ It's easy to get started! There are two main steps to use Tempo UI components in
 
     ```jsx
     import React from "react";
-    import { Buttons, Icon, Loader } from "@jose88/tempo-ui"; // Ensure correct component names
+    import { Buttons, Icon, Loader } from "@jose88/tempo-ui";
 
     const MyAppComponent = () => (
       <div>
         <h1>Welcome to Tempo UI!</h1>
 
-        {/* Example Primary Button */}
+        {/* Example Button */}
         <Button label={"Default Button dark"} kind="standard" color="dark" onClick={() => alert("Button Clicked!")} />
 
         {/* Example Icon */}
