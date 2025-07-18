@@ -1,0 +1,12 @@
+export declare const LABEL_DARK = "dark";
+export declare const LABEL_LIGHT = "light";
+export declare const LABEL_COLOR_COCONUT = "coconut";
+export declare const LABEL_COLOR_BLACKBERRY = "blackberry";
+export declare const LABEL_COLOR_CHERRY = "cherry";
+export declare const LABEL_COLOR_APRICOT = "apricot";
+export declare const LABEL_COLOR_KIWI = "kiwi";
+export declare const LABEL_COLOR_MINT = "mint";
+export declare const LABEL_COLOR_WATER = "water";
+export declare const LABEL_COLOR_BLUEBERRY = "blueberry";
+export declare const LABEL_COLOR_GRAPE = "grape";
+export declare const LABEL_COLOR_WATERMELON = "watermelon";
