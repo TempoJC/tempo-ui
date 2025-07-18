@@ -1,0 +1,86 @@
+/* Label colors */
+.tempo-label--color-coconut {
+  --tempo-label-background: var(--color-coconut200);
+}
+
+.tempo-label--color-blackberry {
+  --tempo-label-background: var(--color-blackberry200);
+}
+
+.tempo-label--color-cherry {
+  --tempo-label-background: var(--color-cherry200);
+}
+
+.tempo-label--color-apricot {
+  --tempo-label-background: var(--color-apricot200);
+}
+
+.tempo-label--color-kiwi {
+  --tempo-label-background: var(--color-kiwi200);
+}
+
+.tempo-label--color-mint {
+  --tempo-label-background: var(--color-mint200);
+}
+
+.tempo-label--color-water {
+  --tempo-label-background: var(--color-water200);
+}
+.tempo-label--color-blueberry {
+  --tempo-label-background: var(--color-blueberry200);
+}
+
+.tempo-label--color-grape {
+  --tempo-label-background: var(--color-grape200);
+}
+
+.tempo-label--color-watermelon {
+  --tempo-label-background: var(--color-watermelon200);
+}
+
+.tempo-label--light {
+  --tempo-label-color: var(--color-token-light-content-inverse);
+}
+
+.tempo-label--dark {
+  --tempo-label-color: var(--color-token-dark-content-inverse);
+}
+
+.tempo-label {
+  display: inline-flex;
+  flex-direction: row;
+  height: 20px;
+  padding: 0px calc(var(--size1) + 2px);
+  align-self: center;
+  background: var(--tempo-label-background);
+}
+
+.tempo-label__content {
+  flex: none;
+  align-self: center;
+  padding: var(--size1) 0px;
+  font: var(--typography-label-l-regular-font);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+  color: var(--tempo-label-color);
+}
+
+.tempo-label__content--lowercase {
+  text-transform: none;
+}
+
+.tempo-label--icon--left > .tempo-label__content {
+  padding-left: var(--size1);
+}
+
+.tempo-label--icon--right > .tempo-label__content {
+  padding-right: var(--size1);
+}
+
+.tempo-label__icon svg path {
+  fill: var(--tempo-label-color);
+}
+
+.tempo-label--dark .tempo-label__icon svg path {
+  fill: var(--tempo-label-color);
+}
