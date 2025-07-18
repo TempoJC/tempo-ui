@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/ContentDisplay/Label render icons 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-label tempo-label--icon--left tempo-label--light tempo-label--color-water"
+  >
+    <div
+      class="tempo-label__icon"
+    >
+      <div
+        data-mock-id="true"
+      />
+    </div>
+    <div
+      class="tempo-label__content"
+    >
+      Label with icon
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Label render with other color 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-label tempo-label--icon--left tempo-label--dark tempo-label--color-water"
+  >
+    <div
+      class="tempo-label__icon"
+    >
+      <div
+        data-mock-id="true"
+      />
+    </div>
+    <div
+      class="tempo-label__content"
+    >
+      Label with icon
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Label render with other variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-label tempo-label--icon--left tempo-label--dark tempo-label--color-blueberry"
+  >
+    <div
+      class="tempo-label__icon"
+    >
+      <div
+        data-mock-id="true"
+      />
+    </div>
+    <div
+      class="tempo-label__content"
+    >
+      Label with icon
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`@tempo-ui/ContentDisplay/Label renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-label tempo-label--light tempo-label--color-water"
+  >
+    <div
+      class="tempo-label__content"
+    >
+      Label
+    </div>
+  </div>
+</DocumentFragment>
+`;
