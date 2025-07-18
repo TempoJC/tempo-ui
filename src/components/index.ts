@@ -6,6 +6,7 @@ export * from "./Atoms/Icons/Icon";
 export * from "./Atoms/Divider";
 export * from "./ContentDisplay/Badge";
 export * from "./ContentDisplay/Avatar";
+export * from "./ContentDisplay/Label";
 export {
   default as Card,
   CardHeader,

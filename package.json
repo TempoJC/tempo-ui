@@ -93,5 +93,12 @@
     "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TempoJC/tempo-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TempoJC/tempo-ui/issues"
+  },
   "homepage": "https://TempoJC.github.io/tempo-ui"
 }

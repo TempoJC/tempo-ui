@@ -34,3 +34,15 @@ export type ControlledUncontrolledValueProps<Value, Event = never> = {
       value?: Value;
     }
 );
+
+export type VariantColor =
+  | "coconut"
+  | "blackberry"
+  | "cherry"
+  | "apricot"
+  | "kiwi"
+  | "mint"
+  | "water"
+  | "blueberry"
+  | "grape"
+  | "watermelon";
