@@ -1,6 +1,6 @@
 <div align="center">
   <a href="[https://github.com/TempoJC/tempo-ui](https://github.com/TempoJC/tempo-ui)" rel="noopener" target="_blank">
-    <img width="200" src="https://raw.githubusercontent.com/TempoJC/tempo-ui/refs/heads/master/src/assets/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
+    <img width="200" src="https://TempoJC.github.io/tempo-ui/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
   </a>
   <h1>Tempo UI</h1>
 </div>
