@@ -3,12 +3,9 @@
   font-style: normal;
   font-weight: normal;
   src:
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.woff2")
-      format("woff2"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.woff")
-      format("woff"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.ttf")
-      format("truetype");
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.woff2) format("woff2"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.woff) format("woff"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Roman.ttf) format("truetype");
 }
 
 @font-face {
@@ -16,8 +13,8 @@
   font-style: italic;
   font-weight: normal;
   src:
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-It.woff2") format("woff2"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-It.woff") format("woff");
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-It.woff2) format("woff2"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-It.woff) format("woff");
 }
 
 @font-face {
@@ -25,10 +22,9 @@
   font-style: normal;
   font-weight: 300;
   src:
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.woff2") format("woff2"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.woff") format("woff"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.ttf")
-      format("truetype");
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.woff2) format("woff2"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.woff) format("woff"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Lt.ttf) format("truetype");
 }
 
 @font-face {
@@ -36,11 +32,9 @@
   font-style: italic;
   font-weight: 300;
   src:
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.woff2")
-      format("woff2"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.woff") format("woff"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.ttf")
-      format("truetype");
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.woff2) format("woff2"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.woff) format("woff"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-LtIt.ttf) format("truetype");
 }
 
 @font-face {
@@ -48,10 +42,7 @@
   font-style: normal;
   font-weight: 500;
   src:
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.woff2")
-      format("woff2"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.woff")
-      format("woff"),
-    url("https://TempoJC.github.io/tempo-ui/fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.ttf")
-      format("truetype");
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.woff2) format("woff2"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.woff) format("woff"),
+    url(./fonts/neu-helvetica-custom/NeueHelveticaforCustom-Medium.ttf) format("truetype");
 }
