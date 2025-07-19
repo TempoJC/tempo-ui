@@ -1,6 +1,6 @@
 # Contributing to Tempo UI
 
-First off, thank you for considering contributing to Tempo UI! It's people like you that make this project such a great tool.
+First off, thank you for considering contributing to Tempo UI! We appreciate your efforts to help us improve.
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
 
@@ -115,37 +115,98 @@ When creating a new component, please follow this structure. Also, remember to c
 7.  Open a Pull Request to the `master` branch of the original repository.
 8.  Provide a clear title and description for your PR.
 
+---
+
 ## Publishing (for Maintainers)
 
-This section is for project maintainers.
+This section outlines the release process for project maintainers.
+
+---
 
 ### Release Process
 
-1.  **Switch to the `master` branch** and ensure it's up to date.
+1.  **Synchronize `develop` with `master` for Release Preparation**
+    First, ensure your local `develop` branch is up-to-date and includes all merged Pull Requests.
+
+    ```bash
+    git checkout develop
+    git pull origin develop # Make sure you have the merged PRs locally
+    ```
+
+2.  **Create a Pull Request (PR) from `develop` to `master` on GitHub**
+    - This PR will represent the new version you are releasing.
+    - Go to your GitHub repository.
+    - Create a new PR from `develop` to `master`. The PR title **must** be `RELEASE X.X.X`, replacing `X.X.X` with the new version number.
+    - Carefully review this PR. This is what will be published to npm. Once merged and published, it's very difficult to revert.
+    - Merge the PR into `master`. It's common practice here to use "Squash and merge" for a cleaner `master` history with "release" commits.
+
+3.  **Prepare and Publish the New Version to npm**
+    Navigate to your local `master` branch and update it:
+
     ```bash
     git checkout master
-    git pull origin master
+    git pull origin master # Fetch the merge commit from develop to master
     ```
-2.  **Update the version number** in `package.json` according to [Semantic Versioning](https://semver.org/).
-3.  **Build the project:**
+
+4.  **Verify Your npm Login**
+    Ensure you are logged in with the correct npm account (`X`).
+
+    ```bash
+    npm whoami
+    ```
+
+    This command should display your username. If not, run `npm login` and correct the registry if necessary (`npm config set registry https://registry.npmjs.org/`).
+
+5.  **Increment Your Package Version**
+    It is **CRITICAL** that you increment the version in `package.json` before publishing. Given that you have version `0.1.0` in `package.json` and have just made documentation improvements (which could be considered a `patch` or `minor` if new features are also included), choose the appropriate increment.
+    - If only documentation improvements and no functional changes affecting the API or adding features:
+
+      ```bash
+      npm version patch # For 0.1.0 -> 0.1.1 (for fixes or docs)
+      ```
+
+    - If there are new, backward-compatible functionalities:
+
+      ```bash
+      npm version minor # For 0.1.0 -> 0.2.0 (for new compatible features)
+      ```
+
+    This command will perform three actions:
+    - Update the `version` field in your `package.json`.
+    - Create a Git commit with the message "vX.Y.Z".
+    - Create a Git tag with the name `vX.Y.Z`.
+
+6.  **Build the Library for Production**
+    Ensure that the `dist` folder contains the latest version, ready for publication.
+
     ```bash
     npm run build
     ```
-    This command cleans the `dist/` folder and bundles the library for production.
-4.  **Log in to npm:**
-    ```bash
-    npm login
-    ```
-5.  **Publish the package:**
+
+7.  **Publish the Library to npm**
+
     ```bash
     npm publish --access public
     ```
-6.  **Create a Git tag** for the new version and push it.
+
+    The `--access public` flag is necessary for your scoped package if it's the first time publishing that version or if the package is new and public. Even if you have previously published `@jose88/tempo-ui`, it's always safe to include it for public scoped packages.
+
+8.  **Push Version Changes and Tags to GitHub**
+    The `npm version` commands create commits and tags, but they do not automatically push them to your remote repository.
+
     ```bash
-    git tag vX.Y.Z
-    git push origin vX.Y.Z
+    git push origin master
+    git push origin --tags
     ```
-7.  **Deploy Storybook** to GitHub Pages.
+
+    This will synchronize the new version in your `package.json`, the version commit, and the corresponding tag in your GitHub repository.
+
+9.  **(Optional) Publish Updated Storybook to GitHub Pages**
+    If your documentation changes also affect Storybook and you want the GitHub Pages version to reflect those improvements:
+
     ```bash
+    npm run build-storybook
     npm run deploy-storybook
     ```
+
+That's it!
