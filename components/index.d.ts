@@ -7,6 +7,7 @@ export * from './Atoms/Divider';
 export * from './ContentDisplay/Badge';
 export * from './ContentDisplay/Avatar';
 export * from './ContentDisplay/Label';
+export * from './ContentDisplay/Tag';
 export { default as Card, CardHeader, CardHeaderImage, CardHeaderContent, CardContentImage, CardFooter, } from './ContentDisplay/Card';
 export * from './Feedback/Loader';
 export * from './Input/AlternativeField';

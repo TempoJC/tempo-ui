@@ -1,0 +1,12 @@
+export declare const TAG_DARK = "dark";
+export declare const TAG_LIGHT = "light";
+export declare const TAG_COLOR_COCONUT = "coconut";
+export declare const TAG_COLOR_BLACKBERRY = "blackberry";
+export declare const TAG_COLOR_CHERRY = "cherry";
+export declare const TAG_COLOR_APRICOT = "apricot";
+export declare const TAG_COLOR_KIWI = "kiwi";
+export declare const TAG_COLOR_MINT = "mint";
+export declare const TAG_COLOR_WATER = "water";
+export declare const TAG_COLOR_BLUEBERRY = "blueberry";
+export declare const TAG_COLOR_GRAPE = "grape";
+export declare const TAG_COLOR_WATERMELON = "watermelon";
