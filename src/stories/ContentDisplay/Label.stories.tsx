@@ -1,4 +1,5 @@
 import { Label } from "@/components";
+import { StoryFn } from "@storybook/react";
 import {
   LABEL_COLOR_APRICOT,
   LABEL_COLOR_BLACKBERRY,
@@ -66,6 +67,19 @@ const meta: Meta<typeof Label> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const ALL_VARIANTS = [
+  { label: "Coconut", variant: LABEL_COLOR_COCONUT },
+  { label: "Blackberry", variant: LABEL_COLOR_BLACKBERRY },
+  { label: "Cherry", variant: LABEL_COLOR_CHERRY },
+  { label: "Apricot", variant: LABEL_COLOR_APRICOT },
+  { label: "Kiwi", variant: LABEL_COLOR_KIWI },
+  { label: "Mint", variant: LABEL_COLOR_MINT },
+  { label: "Water", variant: LABEL_COLOR_WATER },
+  { label: "Blueberry", variant: LABEL_COLOR_BLUEBERRY },
+  { label: "Grape", variant: LABEL_COLOR_GRAPE },
+  { label: "Watermelon", variant: LABEL_COLOR_WATERMELON },
+];
+
 export const Default: Story = {
   args: {
     label: "Etiqueta por defecto",
@@ -79,7 +93,7 @@ export const WithLeftIcon: Story = {
       <span role="img" aria-label="emoji de casa">
         🏠
       </span>
-    ), // Ejemplo simple de icono
+    ),
   },
 };
 
@@ -90,98 +104,22 @@ export const WithRightIcon: Story = {
       <span role="img" aria-label="emoji de estrella">
         ⭐
       </span>
-    ), // Ejemplo simple de icono
+    ),
   },
 };
 
-export const DarkColor: Story = {
-  args: {
-    label: "Etiqueta oscura",
-    color: LABEL_DARK,
-  },
-};
+export const AllVariantsOfLigthMode: StoryFn<typeof Label> = (args) => (
+  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+    {ALL_VARIANTS.map(({ label, variant }) => (
+      <Label key={variant} {...args} label={label} variant={variant as any} />
+    ))}
+  </div>
+);
 
-export const Lowercase: Story = {
-  args: {
-    label: "Etiqueta en minúsculas",
-    uppercase: false,
-  },
-};
-
-export const CoconutVariant: Story = {
-  args: {
-    label: "Coconut",
-    variant: LABEL_COLOR_COCONUT,
-  },
-};
-
-export const BlackberryVariant: Story = {
-  args: {
-    label: "Blackberry",
-    variant: LABEL_COLOR_BLACKBERRY,
-  },
-};
-
-export const CherryVariant: Story = {
-  args: {
-    label: "Cherry",
-    variant: LABEL_COLOR_CHERRY,
-  },
-};
-
-export const ApricotVariant: Story = {
-  args: {
-    label: "Apricot",
-    variant: LABEL_COLOR_APRICOT,
-  },
-};
-
-export const KiwiVariant: Story = {
-  args: {
-    label: "Kiwi",
-    variant: LABEL_COLOR_KIWI,
-  },
-};
-
-export const MintVariant: Story = {
-  args: {
-    label: "Mint",
-    variant: LABEL_COLOR_MINT,
-  },
-};
-
-export const WaterVariant: Story = {
-  args: {
-    label: "Water",
-    variant: LABEL_COLOR_WATER,
-  },
-};
-
-export const BlueberryVariant: Story = {
-  args: {
-    label: "Blueberry",
-    variant: LABEL_COLOR_BLUEBERRY,
-  },
-};
-
-export const GrapeVariant: Story = {
-  args: {
-    label: "Grape",
-    variant: LABEL_COLOR_GRAPE,
-  },
-};
-
-export const WatermelonVariant: Story = {
-  args: {
-    label: "Watermelon",
-    variant: LABEL_COLOR_WATERMELON,
-  },
-};
-
-export const BlueberryDarkVariant: Story = {
-  args: {
-    label: "Arándano Oscuro",
-    variant: LABEL_COLOR_BLUEBERRY,
-    color: LABEL_DARK,
-  },
-};
+export const AllVariantsOfDarkMode: StoryFn<typeof Label> = (args) => (
+  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+    {ALL_VARIANTS.map(({ label, variant }) => (
+      <Label key={variant} {...args} label={label} variant={variant as any} color={LABEL_DARK} />
+    ))}
+  </div>
+);

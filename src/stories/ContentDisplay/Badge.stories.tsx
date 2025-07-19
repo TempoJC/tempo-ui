@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryFn, StoryObj } from "@storybook/react";
 import {
   Badge,
   BADGE_COLOR_APRICOT,
@@ -84,9 +84,45 @@ export const Dark: Story = {
   },
 };
 
-export const Grape: Story = {
-  args: {
-    text: "1",
-    variant: BADGE_COLOR_GRAPE,
-  },
+const ALL_BADGE_VARIANTS = [
+  { label: "Coconut", variant: BADGE_COLOR_COCONUT },
+  { label: "Blackberry", variant: BADGE_COLOR_BLACKBERRY },
+  { label: "Cherry", variant: BADGE_COLOR_CHERRY },
+  { label: "Apricot", variant: BADGE_COLOR_APRICOT },
+  { label: "Kiwi", variant: BADGE_COLOR_KIWI },
+  { label: "Mint", variant: BADGE_COLOR_MINT },
+  { label: "Water", variant: BADGE_COLOR_WATER },
+  { label: "Blueberry", variant: BADGE_COLOR_BLUEBERRY },
+  { label: "Grape", variant: BADGE_COLOR_GRAPE },
+  { label: "Watermelon", variant: BADGE_COLOR_WATERMELON },
+];
+
+export const AllColorVariantsOfLigthMode: StoryFn<typeof Badge> = (args) => (
+  <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+    {ALL_BADGE_VARIANTS.map(({ label, variant }) => (
+      <div key={variant} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}>
+        <Badge {...args} variant={variant as any} />
+        <span style={{ fontSize: "12px" }}>{label}</span>
+      </div>
+    ))}
+  </div>
+);
+
+AllColorVariantsOfLigthMode.args = {
+  text: "1",
+};
+
+export const AllColorVariantsOfDarkMode: StoryFn<typeof Badge> = (args) => (
+  <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+    {ALL_BADGE_VARIANTS.map(({ label, variant }) => (
+      <div key={variant} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}>
+        <Badge {...args} variant={variant as any} color="dark" />
+        <span style={{ fontSize: "12px" }}>{label}</span>
+      </div>
+    ))}
+  </div>
+);
+
+AllColorVariantsOfDarkMode.args = {
+  text: "2",
 };

@@ -62,7 +62,4 @@ export const Dark = {
     icon: "💡",
     color: "dark",
   },
-  decorators: [
-    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
-  ],
 };
