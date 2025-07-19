@@ -104,6 +104,43 @@ A typical component folder looks like this:
 
 When creating a new component, please follow this structure. Also, remember to create a corresponding story file in `src/stories/`.
 
+## How to Create a Component
+
+Follow these steps to create a new component for this library:
+
+### 1. Create the Component Files
+
+Create a new folder for your component within `src/components/`.
+
+If you are creating a **TSX component**, it must include at least the following files:
+
+- **`index.ts`**: This file should export the component and its types.
+  - Example:
+    ```typescript
+    export { default as Button } from "./Button";
+    export * from "./types";
+    ```
+- **`[NameComponent].tsx`**: This is the main component file, named after your component (e.g., `Button.tsx`).
+- **`types.ts`**: This file contains the TypeScript types for your component.
+- A folder named **`__tests__`**: Inside this folder, create a test file named `[NameComponent].test.tsx`.
+
+### 2. Export the Component
+
+Add an export for your new component in `src/components/index.ts`.
+
+- Example:
+  ```typescript
+  export * from "./Atoms/Buttons/Button";
+  ```
+
+### 3. Create Storybook Stories
+
+Include a new Storybook file for your component in `src/stories/`. Name the file `[NameComponent].stories.tsx` (e.g., `Avatar.stories.tsx`), and it should contain the stories for your component.
+
+### 4. Update `README.md`
+
+Add your new component and a brief description to the "Available Components" section of the `README.md` file.
+
 ## Submitting a Pull Request
 
 1.  Create a new branch for your feature or bug fix: `git checkout -b feature/my-awesome-feature`.
