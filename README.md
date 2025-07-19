@@ -4,6 +4,8 @@
   </a>
 </div>
 
+---
+
 [![NPM Version](https://img.shields.io/npm/v/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/TempoJC/tempo-ui/refs/heads/master/LICENSE)
 [![npm downloads](https://img.shields.io/npm/dm/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
