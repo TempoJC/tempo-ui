@@ -1,6 +1,4 @@
-import { create, themes } from "storybook/theming";
-
-console.log("THEME: ", themes);
+import { create } from "storybook/theming";
 
 export default create({
   base: "light",
@@ -34,6 +32,6 @@ export default create({
   // Brand
   brandTitle: "Tempo-UI",
   brandUrl: "https://github.com/TempoJC/tempo-ui",
-  brandImage: "./src/assets/kawhi/kawhi_favicon.svg",
+  brandImage: "./src/assets/kawhi/kahwi_title_logo.svg",
   brandTarget: "_self",
 });
