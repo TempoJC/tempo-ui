@@ -66,9 +66,6 @@ export const Dark = {
     label: "Dark Button",
     color: "dark",
   },
-  decorators: [
-    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
-  ],
 };
 
 export const Disabled = {

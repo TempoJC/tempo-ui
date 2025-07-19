@@ -98,12 +98,7 @@ export const BarDark: Story = {
     color: LOADER_DARK,
   },
   decorators: [
-    (Story) =>
-      React.createElement(
-        "div",
-        { style: { width: "400px", backgroundColor: "black", padding: "10px" } },
-        React.createElement(Story),
-      ),
+    (Story) => React.createElement("div", { style: { width: "400px", padding: "10px" } }, React.createElement(Story)),
   ],
 };
 
