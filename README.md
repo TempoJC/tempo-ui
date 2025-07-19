@@ -11,7 +11,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@jose88/tempo-ui)](https://bundlephobia.com/package/@jose88/tempo-ui)
 
-**<span style="color:#A55A2A;">Tempo UI</span>** is a modern, lightweight React component library built with Vite, focused on a clean, minimalist design and a great developer experience. It's designed for easy integration into any React project.
+**Tempo UI** is a modern, lightweight React component library built with Vite, focused on a clean, minimalist design and a great developer experience. It's designed for easy integration into any React project.
 
 ## 🚀 Live Demo (Storybook)
 
