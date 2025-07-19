@@ -134,7 +134,7 @@ function MyAliasedAppComponent() {
 
 - **Atoms**
   - `Buttons`: A suite of button components with different styles and functionalities (**Button**, **ActionButton**, **SwitchButton**).
-  - `Icon`: For displaying a set of predefined SVG icons.
+  - `Icon`: Component that displays a set of predefined SVG icons.
   - `Checkbox`: Base component to define a checkbox.
   - `Divider`: Use this component to show a divider.
 - **ContentDisplay**
@@ -142,6 +142,7 @@ function MyAliasedAppComponent() {
   - `Avatar`: If an image is used it will be shown as avatar, otherwise the initials will be used.
   - `Badge`: Component to render a badge (with optional text content).
   - `Label`: Component which shows a text value as a label.
+  - `Tag`: Component that shows a text value as a tag.
 - **Feedback**
   - `Loader`: An indicator for loading states.
 - **Form**

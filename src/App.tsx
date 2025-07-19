@@ -15,16 +15,28 @@ import {
   CardContentImage,
   CardFooter,
   Label,
+  Tag,
 } from "@/components";
 
 function App() {
   return (
     <div>
       <h1>¡Tu Librería de Componentes!</h1>
+      <Tag label="Label" />
+      <Tag label="Label with icon" variant="blueberry" />
+      <Tag label="Label" color="dark" />
+      <Tag
+        label="Label with icon"
+        variant="blueberry"
+        onRemoveButtonClick={() => console.log("Remove button clicked")}
+        readOnly={false}
+      />
+
+      <Divider kind="horizontal" />
       <Label label="Label" />
       <Label label="Label with icon" variant="blueberry" color="dark" />
       <Label label="Label with icon" variant="blueberry" iconRight={<Icon group="actions" name="add" />} />
-
+      <Divider kind="horizontal" />
       <Icon group="actions" name="add" onClick={() => console.log("Icon clicked")} />
       <Icon group="alerts" name="information-filled" onClick={() => console.log("Icon clicked")} />
       <Divider kind="horizontal" />
