@@ -2,12 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import dts from "vite-plugin-dts";
-import { visualizer } from "rollup-plugin-visualizer";
+// import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   plugins: [
     react(),
-    visualizer({ open: true, filename: "bundle-report.html" }), // Generates a bundle report
+    // visualizer({ open: true, filename: "bundle-report.html" }), // Generates a bundle report
     dts({
       insertTypesEntry: true,
       rollupTypes: false,

@@ -2,19 +2,19 @@
   font-family: "NotoSansMono";
   font-style: normal;
   font-weight: normal;
-  src: url("@assets/fonts/noto-sans-mono/NotoSansMono-Regular.ttf") format("truetype");
+  src: url("NotoSansMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NotoSansMono";
   font-style: normal;
   font-weight: 300;
-  src: url("@assets/fonts/noto-sans-mono/NotoSansMono-Light.ttf") format("truetype");
+  src: url("NotoSansMono-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NotoSansMono";
   font-style: normal;
   font-weight: 500;
-  src: url("@assets/fonts/noto-sans-mono/NotoSansMono-Bold.ttf") format("truetype");
+  src: url("NotoSansMono-Bold.ttf") format("truetype");
 }
