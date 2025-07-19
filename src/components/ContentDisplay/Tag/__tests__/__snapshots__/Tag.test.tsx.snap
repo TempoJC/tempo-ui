@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`@tempo-ui/ContentDisplay/Tag renders 1`] = `
+<DocumentFragment>
+  <div
+    class="tempo-tag tempo-tag--light tempo-tag--readOnly"
+  >
+    <div
+      class="tempo-tag__label"
+    >
+      label
+    </div>
+  </div>
+</DocumentFragment>
+`;

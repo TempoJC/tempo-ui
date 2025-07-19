@@ -1,16 +1,17 @@
 <div align="center">
-  <a href="[https://github.com/TempoJC/tempo-ui](https://github.com/TempoJC/tempo-ui)" rel="noopener" target="_blank">
-    <img width="200" src="https://TempoJC.github.io/tempo-ui/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
+  <a href="https://github.com/TempoJC/tempo-ui" rel="noopener" target="_blank">
+    <img width="200" src="https://TempoJC.github.io/tempo-ui/kawhi/kahwi_title_logo.svg" alt="Tempo UI logo">
   </a>
-  <h1>Tempo UI</h1>
 </div>
 
+---
+
 [![NPM Version](https://img.shields.io/npm/v/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/TempoJC/tempo-ui/refs/heads/master/LICENSE)
 [![npm downloads](https://img.shields.io/npm/dm/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@jose88/tempo-ui)](https://bundlephobia.com/package/@jose88/tempo-ui)
 
-**tempo-ui** is a modern and lightweight React component library, built with Vite and focused on a clean design and a great developer experience. It's designed to be easily integrated into any React project.
+**Tempo UI** is a modern, lightweight React component library built with Vite, focused on a clean, minimalist design and a great developer experience. It's designed for easy integration into any React project.
 
 ## 🚀 Live Demo (Storybook)
 
@@ -133,7 +134,7 @@ function MyAliasedAppComponent() {
 
 - **Atoms**
   - `Buttons`: A suite of button components with different styles and functionalities (**Button**, **ActionButton**, **SwitchButton**).
-  - `Icon`: For displaying a set of predefined SVG icons.
+  - `Icon`: Component that displays a set of predefined SVG icons.
   - `Checkbox`: Base component to define a checkbox.
   - `Divider`: Use this component to show a divider.
 - **ContentDisplay**
@@ -141,6 +142,7 @@ function MyAliasedAppComponent() {
   - `Avatar`: If an image is used it will be shown as avatar, otherwise the initials will be used.
   - `Badge`: Component to render a badge (with optional text content).
   - `Label`: Component which shows a text value as a label.
+  - `Tag`: Component that shows a text value as a tag.
 - **Feedback**
   - `Loader`: An indicator for loading states.
 - **Form**

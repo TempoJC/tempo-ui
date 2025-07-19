@@ -5,6 +5,9 @@ import ErrorIcon from "./ErrorIcon";
 import type { IconProps } from "./types";
 import "./Icon.css";
 
+/**
+ * Component that displays a set of predefined SVG icons.
+ */
 const Icon: React.FC<IconProps> = ({ className, testId, group, name, errorFallback = <ErrorIcon />, ...rest }) => {
   const { error, svgRef } = useInlineIcons({ group, name });
 
