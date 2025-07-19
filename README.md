@@ -1,12 +1,11 @@
 <div align="center">
-  <a href="[https://github.com/TempoJC/tempo-ui](https://github.com/TempoJC/tempo-ui)" rel="noopener" target="_blank">
-    <img width="200" src="https://TempoJC.github.io/tempo-ui/kawhi/kawhi_logo.svg" alt="Tempo UI logo">
+  <a href="https://github.com/TempoJC/tempo-ui" rel="noopener" target="_blank">
+    <img width="200" src="https://TempoJC.github.io/tempo-ui/kawhi/kahwi_title_logo.svg" alt="Tempo UI logo">
   </a>
-  <h1>Tempo UI</h1>
 </div>
 
 [![NPM Version](https://img.shields.io/npm/v/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/TempoJC/tempo-ui/refs/heads/master/LICENSE)
 [![npm downloads](https://img.shields.io/npm/dm/@jose88/tempo-ui.svg)](https://www.npmjs.com/package/@jose88/tempo-ui)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/@jose88/tempo-ui)](https://bundlephobia.com/package/@jose88/tempo-ui)
 
