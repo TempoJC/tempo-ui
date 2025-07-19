@@ -90,9 +90,18 @@ export const Removable: Story = {
 };
 
 export const AllVariants: StoryFn<typeof Tag> = (args) => (
-  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+  <div style={{ display: "flex", flexDirection: "row", gap: "2px" }}>
     {ALL_VARIANTS.map(({ label, variant }) => (
-      <Tag key={variant} {...args} label={label} variant={variant} />
+      <Tag
+        key={variant}
+        {...args}
+        label={label}
+        variant={variant}
+        readOnly={false}
+        onClick={() => {
+          console.log("click");
+        }}
+      />
     ))}
   </div>
 );

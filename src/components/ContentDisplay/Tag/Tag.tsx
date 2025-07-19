@@ -1,3 +1,4 @@
+import React from "react";
 import cn from "classnames";
 import { Icon } from "@/components";
 import { TagProps } from "./types";
@@ -32,6 +33,20 @@ const Tag = ({
   testId,
   uppercase = true,
 }: TagProps) => {
+  const handleRemove = (e: React.MouseEvent<HTMLSpanElement> | React.KeyboardEvent<HTMLSpanElement>) => {
+    if (disabled) return undefined;
+    e.stopPropagation();
+
+    onRemoveButtonClick?.(e as React.MouseEvent<HTMLSpanElement>);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handleRemove(e);
+    }
+  };
+
   return (
     <div
       className={cn(
@@ -73,7 +88,10 @@ const Tag = ({
       {!readOnly && (
         <span
           className="tempo-tag__action"
-          onClick={disabled ? undefined : onRemoveButtonClick}
+          onClick={handleRemove}
+          onKeyDown={handleKeyDown}
+          role="button"
+          tabIndex={disabled ? -1 : 0}
           data-testid={testId && `${testId}-delete-button`}
         >
           <Icon group="actions" name="close-small" />

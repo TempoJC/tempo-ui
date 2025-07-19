@@ -5,6 +5,9 @@ import { Icon } from "@components/Atoms/Icons/Icon";
 import type { ButtonProps } from "./types";
 import "./Button.css";
 
+/**
+ * Use this component to show a button.
+ */
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
