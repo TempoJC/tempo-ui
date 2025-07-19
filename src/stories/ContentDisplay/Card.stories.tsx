@@ -72,7 +72,4 @@ export const Dark: Story = {
       </Card>
     ),
   },
-  decorators: [
-    (Story) => React.createElement("div", { style: { backgroundColor: "black" } }, React.createElement(Story)),
-  ],
 };
