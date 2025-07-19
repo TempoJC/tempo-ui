@@ -32,6 +32,6 @@ export default create({
   // Brand
   brandTitle: "Tempo-UI",
   brandUrl: "https://github.com/TempoJC/tempo-ui",
-  brandImage: "./src/assets/kawhi/kahwi_title_logo.svg",
+  brandImage: "https://TempoJC.github.io/tempo-ui/kawhi/kahwi_title_logo.svg",
   brandTarget: "_self",
 });
