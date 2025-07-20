@@ -145,6 +145,7 @@ function MyAliasedAppComponent() {
   - `Tag`: Component that shows a text value as a tag.
 - **Feedback**
   - `Loader`: An indicator for loading states.
+  - `FeedbackState`: A component for displaying feedback states such as loading, progress, or custom messages with optional headers and footers.
 - **Form**
   - `AlternativeField`: A generic wrapper for form fields.
 

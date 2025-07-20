@@ -1,0 +1,33 @@
+.tempo-feedback-state-v2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: var(--size4);
+  color: var(--color-token-light-content-1);
+}
+
+.tempo-feedback-state-v2--dark {
+  color: var(--color-token-dark-content-1);
+}
+
+.tempo-feedback-state-v2__message {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  row-gap: var(--size2);
+}
+
+.tempo-feedback-state-v2__title {
+  font: var(--typography-label-l-medium-font);
+  letter-spacing: var(--typography-label-l-medium-letter-spacing);
+  text-transform: var(--typography-label-l-medium-text-transform);
+  text-align: center;
+}
+
+.tempo-feedback-state-v2__subtitle {
+  font: var(--typography-label-l-regular-font);
+  letter-spacing: var(--typography-label-l-regular-letter-spacing);
+  text-transform: var(--typography-label-l-regular-text-transform);
+  text-align: center;
+}

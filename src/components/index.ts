@@ -17,5 +17,5 @@ export {
   CardFooter,
 } from "./ContentDisplay/Card";
 export * from "./Feedback/Loader";
+export * from "./Feedback/FeedbackState";
 export * from "./Input/AlternativeField";
-// Agrega más exports a medida que crees más componentes

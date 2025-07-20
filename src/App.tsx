@@ -16,12 +16,20 @@ import {
   CardFooter,
   Label,
   Tag,
+  FeedbackState,
 } from "@/components";
 
 function App() {
   return (
     <div>
       <h1>¡Tu Librería de Componentes!</h1>
+      <FeedbackState
+        title="Items not found"
+        subtitle="Load another file to start"
+        footer={<div>Footer</div>}
+        header={<div>Header</div>}
+      />
+      <Divider kind="horizontal" />
       <Tag label="Label" />
       <Tag label="Label with icon" variant="blueberry" />
       <Tag label="Label" color="dark" />
@@ -31,7 +39,7 @@ function App() {
         onRemoveButtonClick={() => console.log("Remove button clicked")}
         readOnly={false}
       />
-
+      <Divider kind="horizontal" />
       <Divider kind="horizontal" />
       <Label label="Label" />
       <Label label="Label with icon" variant="blueberry" color="dark" />
